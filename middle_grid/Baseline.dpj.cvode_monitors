@@ -1,0 +1,5 @@
+CVODE monitor variables, starting solver at: Wed Jul 10 14:56:42 2019
+
+Project: C:\Users\sophia\Desktop\reference_house_IAQ\middle_grid\Baseline.dpj
+
+Steps                Time         RhsEvals JacEvals NNiters  NNfails  Order StepSize     RelTol    

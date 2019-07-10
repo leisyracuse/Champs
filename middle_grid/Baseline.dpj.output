@@ -1,0 +1,48 @@
+.Reading project: 'C:\Users\sophia\Desktop\reference_house_IAQ\middle_grid\Baseline.dpj'
+  .Reading material file 'C:\Program Files (x86)\BEESL\CHAMPS_BES 1.6\examples\materials\Gypsum Board.mat'
+  .Reading material file 'C:\Program Files (x86)\BEESL\CHAMPS_BES 1.6\examples\materials\Air.mat'
+.Project read successfully!
+.Initialization of solver:
+  .Setting up project
+    .Transferring materials and conditions
+    .Creating element index matrix and selecting used elements
+    .Numbering elements and creating vector with used elements
+    .Elements numbered, number of elements: 26790
+    .Calculating element geometry
+      .Grid width  (x-dimension) = 9.716 m
+      .Grid height (y-dimension) = 8.432 m
+    .Assigning materials.
+    .Assigning initial conditions
+    .Assigning field conditions
+    .Setting up horizontal sides matrix
+    .Setting up vertical sides matrix
+    .Assigning boundary conditions
+    .Assigning contact conditions
+    .Renumbering sides and creating final sides vector
+    .Side vector created, number of sides: 53249
+    .Linking elements to sides
+    .Setting up output grids
+    .Assigning output ranges
+  .Initializing climate conditions
+  .Initializing material functions
+    .Initializing material 'R13 Fiber Glass'
+    .Initializing material 'Plywood'
+      .Converting: Dl -> Psi
+    .Initializing material 'Gypsum Board'
+      .Converting: Dl -> Psi
+    .Initializing material 'Air'
+    .Initializing material 'Carpet'
+      .Converting: Dl -> Psi
+    .Creating output files
+    .Setting up simulation time frame
+    .Number of balance equations per element: 3
+    .Pre-calculating energy parameters
+    .Setting initial conditions
+    .Initializing CVODE integrator
+.Initialization complete!
+.Starting solver:
+
+Simtime     Simdate           Realtime    MeanSp       CurrentSp    ETC
+ 0.010 s    06/23/00  0:00:00 15.194 s     0.001 s/s    0.001 s/s    4.163 a *
+ 0.010 s    06/23/00  0:00:00 30.217 s     0.000 s/s    0.000 s/s    8.279 a *
+ 0.010 s    06/23/00  0:00:00 5.855 min    0.000 s/s    0.000 
