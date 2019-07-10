@@ -2,7 +2,7 @@
 
   FILE_VERSION             = 5.5.6
   CREATED                  = Tue Jul 09 14:15:30 2019
-  LAST_EDIT                = Wed Jul 10 13:14:49 2019
+  LAST_EDIT                = Wed Jul 10 13:59:28 2019
 
 
 ; ******************************************************************************
@@ -32,7 +32,7 @@
     USE_HYSTERESIS           = no
     START_YEAR               = 2000
     START_TIME               = 14947200
-    DURATION                 = 1 h
+    DURATION                 = 1 d
     ISOTHERMAL_T_REF         = 20 C
     SOLVER                   = INTERNAL_CVODE_SOLVER
     VOC_DATABASE             = $(PROJECT_DIR)\CalciumSilicate-Toluene.vdb
@@ -234,7 +234,7 @@
     [INIT_COND]
       NAME                     = Cm0
       TYPE                     = VOCMASS
-      VALUE                    = 100 mg/m3
+      VALUE                    = 1000 mg/m3
 
 
 
@@ -266,8 +266,8 @@
 [DISCRETISATION]
 
   GEOMETRY                 = PLANE2D
-  X_STEPS                  = 0.0066666667 0.0066666667 0.0066666667 0.010159644 0.015482754 0.014614562 0.014614562 0.014614562 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.018875911 0.028765879 0.043837662 0.066806253 0.10180916 0.17219561 0.17219561 0.17219561 0.17219561 0.10180916 0.066806253 0.043837662 0.028765879 0.018875911 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.014614562 0.014614562 0.014614562 0.015482754 0.010159644 0.0066666667 0.0066666667 0.0066666667 0.010159644 0.015482754 0.014614562 0.014614562 0.014614562 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.018875911 0.028765879 0.043837662 0.066806253 0.10180916 0.15515171 0.23644292 0.36032636 0.54911811 0.83417606 0.83417606 0.83417606 0.83417606 0.54911811 0.36032636 0.23644292 0.15515171 0.10180916 0.066806253 0.043837662 0.028765879 0.018875911 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.014614562 0.014614562 0.014614562 0.015482754 0.010159644 0.0066666667 0.0066666667 0.0066666667 0.010159644 0.015482754 0.014614562 0.014614562 0.014614562 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.018875911 0.028765879 0.043837662 0.066806253 0.10180916 0.17219561 0.17219561 0.17219561 0.17219561 0.10180916 0.066806253 0.043837662 0.028765879 0.018875911 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.014614562 0.014614562 0.014614562 0.015482754 0.010159644 0.0066666667 0.0066666667 0.0066666667 m
-  Y_STEPS                  = 0.0066666667 0.0066666667 0.0066666667 0.010159644 0.015482754 0.014614562 0.014614562 0.014614562 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.018875911 0.028765879 0.045461074 0.045461074 0.045461074 0.045461074 0.12699555 0.19353442 0.29493611 0.44946687 0.68496347 0.87505179 0.87505179 0.87505179 0.87505179 0.68496347 0.44946687 0.29493611 0.19353442 0.12699555 0.045001037 0.045001037 0.045001037 0.045001037 0.027398538 0.017978674 0.011797444 0.0077413767 0.0050798217 0.0033333333 0.0033333333 0.0033333333 0.0050798217 0.0098403564 0.0050798217 0.0033333333 0.0033333333 0.0033333333 0.0050798217 0.0077413767 0.011797444 0.016920905 0.016920905 0.016920905 0.011797444 0.0077413767 0.0050798217 0.0033333333 0.0033333333 0.0033333333 0.0050798217 0.0098403564 0.0050798217 0.0033333333 0.0033333333 0.0033333333 0.0050798217 0.0077413767 0.011797444 0.017978674 0.027398538 0.041753908 0.063630723 0.053156536 0.053156536 0.053156536 0.053156536 0.043837662 0.028765879 0.018875911 0.012386203 0.0081277148 0.0053333333 0.0053333333 0.0053333333 0.0081277148 0.012386203 0.014614562 0.014614562 0.014614562 0.015482754 0.010159644 0.0066666667 0.0066666667 0.0066666667 m
+  X_STEPS                  = 0.0066666667 0.0066666667 0.0066666667 0.01189816 0.017198456 0.017198456 0.017198456 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.030318794 0.05411068 0.096572629 0.20874571 0.20874571 0.20874571 0.20874571 0.096572629 0.05411068 0.030318794 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.017198456 0.017198456 0.017198456 0.01189816 0.0066666667 0.0066666667 0.0066666667 0.01189816 0.017198456 0.017198456 0.017198456 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.030318794 0.05411068 0.096572629 0.17235549 0.30760698 0.54899356 1.0067677 1.0067677 1.0067677 1.0067677 0.54899356 0.30760698 0.17235549 0.096572629 0.05411068 0.030318794 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.017198456 0.017198456 0.017198456 0.01189816 0.0066666667 0.0066666667 0.0066666667 0.01189816 0.017198456 0.017198456 0.017198456 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.030318794 0.05411068 0.096572629 0.20874571 0.20874571 0.20874571 0.20874571 0.096572629 0.05411068 0.030318794 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.017198456 0.017198456 0.017198456 0.01189816 0.0066666667 0.0066666667 0.0066666667 m
+  Y_STEPS                  = 0.0066666667 0.0066666667 0.0066666667 0.01189816 0.017198456 0.017198456 0.017198456 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.030318794 0.048293683 0.048293683 0.048293683 0.048293683 0.148727 0.26543665 0.47373116 0.84547937 1.1777505 1.1777505 1.1777505 0.84547937 0.47373116 0.26543665 0.148727 0.060221678 0.060221678 0.060221678 0.033819175 0.018949246 0.010617466 0.00594908 0.0033333333 0.0033333333 0.0033333333 0.00594908 0.0081018401 0.00594908 0.0033333333 0.0033333333 0.0033333333 0.00594908 0.010617466 0.016716727 0.016716727 0.016716727 0.016716727 0.010617466 0.00594908 0.0033333333 0.0033333333 0.0033333333 0.00594908 0.0081018401 0.00594908 0.0033333333 0.0033333333 0.0033333333 0.00594908 0.010617466 0.018949246 0.033819175 0.060357893 0.086457064 0.086457064 0.086457064 0.05411068 0.030318794 0.016987946 0.009518528 0.0053333333 0.0053333333 0.0053333333 0.009518528 0.016987946 0.017198456 0.017198456 0.017198456 0.01189816 0.0066666667 0.0066666667 0.0066666667 m
   Z_STEPS                  = 1 m
   THETA_Z                  = 0
   PIE_SLICE_ANGLE          = 360
@@ -299,7 +299,20 @@
       FIELD_TYPE               = VOCDENSG
       SPACE_TYPE               = MEAN
       TIME_TYPE                = NONE
-      TIME_UNIT                = d
+      TIME_UNIT                = h
+      VALUE_UNIT               = mg/m3
+      PRECISION                = 9
+      WIDTH                    = 12
+      FORMAT                   = DEFAULT
+      BINARY                   = no
+
+    [OUTPUT_FORMAT]
+      NAME                     = Cm(xy)
+      TYPE                     = FIELD
+      FIELD_TYPE               = VOCDENSG
+      SPACE_TYPE               = SINGLE
+      TIME_TYPE                = NONE
+      TIME_UNIT                = h
       VALUE_UNIT               = mg/m3
       PRECISION                = 9
       WIDTH                    = 12
@@ -314,6 +327,11 @@
       OUTPUT_GRID              = hours
       OUTPUT_FORMAT            = Ca(t)
 
+    [OUTPUT_FILE]
+      NAME                     = Cm(xy).out
+      OUTPUT_GRID              = hours
+      OUTPUT_FORMAT            = Cm(xy)
+
 
 
 ; ******************************************************************************
@@ -323,366 +341,414 @@
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 3 3 130 9
+    RANGE                    = 3 3 110 8
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 124 3 130 96
+    RANGE                    = 105 3 110 83
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 3 90 130 96
+    RANGE                    = 3 78 110 83
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 3 3 9 96
+    RANGE                    = 3 3 8 83
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 0 0 133 2
+    RANGE                    = 0 0 113 2
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 131 0 133 99
+    RANGE                    = 111 0 113 86
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 0 97 133 99
+    RANGE                    = 0 84 113 86
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 0 0 2 99
+    RANGE                    = 0 0 2 86
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 10 10 123 12
+    RANGE                    = 9 9 104 11
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 121 13 123 89
+    RANGE                    = 102 12 104 77
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 10 87 123 89
+    RANGE                    = 9 75 104 77
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 10 10 12 89
+    RANGE                    = 9 9 11 77
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 13 13 30 86
+    RANGE                    = 12 12 25 74
     NAME                     = Air
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 103 13 120 86
+    RANGE                    = 88 12 101 74
     NAME                     = Air
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 71 120 86
+    RANGE                    = 26 63 101 74
     NAME                     = Air
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 13 13 102 43
+    RANGE                    = 12 12 87 36
     NAME                     = Air
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 65 102 67
+    RANGE                    = 26 57 87 59
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 62 102 64
+    RANGE                    = 26 54 87 56
     NAME                     = Carpet
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 68 102 70
+    RANGE                    = 26 60 87 62
     NAME                     = Carpet
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 53 120 61
+    RANGE                    = 26 46 101 53
     NAME                     = Air
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 50 102 52
+    RANGE                    = 26 43 87 45
     NAME                     = Carpet
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 47 102 49
+    RANGE                    = 26 40 87 42
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 44 102 46
+    RANGE                    = 26 37 87 39
     NAME                     = Carpet
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 31 13 33 43
+    RANGE                    = 26 12 28 36
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 34 13 40 43
+    RANGE                    = 29 12 34 36
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 41 13 43 43
+    RANGE                    = 35 12 37 36
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 44 13 50 43
+    RANGE                    = 38 12 43 36
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 51 13 53 43
+    RANGE                    = 44 12 46 36
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 80 13 82 43
+    RANGE                    = 67 12 69 36
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 83 13 89 43
+    RANGE                    = 70 12 75 36
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 90 13 92 43
+    RANGE                    = 76 12 78 36
     NAME                     = Plywood
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 93 13 99 43
+    RANGE                    = 79 12 84 36
     NAME                     = R13 Fiber Glass
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 100 13 102 43
+    RANGE                    = 85 12 87 36
     NAME                     = Gypsum Board
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 13 13 120 20
+    RANGE                    = 12 12 101 18
     NAME                     = Air
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = MATERIAL
-    RANGE                    = 13 35 120 43
+    RANGE                    = 12 30 101 36
     NAME                     = Air
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 103 13 120 86
+    RANGE                    = 12 12 101 18
     NAME                     = Ca0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 13 13 120 20
+    RANGE                    = 12 12 25 74
     NAME                     = Ca0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 13 13 30 86
+    RANGE                    = 12 63 101 74
     NAME                     = Ca0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 13 71 120 86
+    RANGE                    = 12 46 101 53
     NAME                     = Ca0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 13 53 120 61
+    RANGE                    = 12 30 87 36
     NAME                     = Ca0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 13 35 102 43
+    RANGE                    = 47 19 66 29
     NAME                     = Ca0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 54 21 79 34
+    RANGE                    = 102 0 113 86
     NAME                     = Ca0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 31 65 102 67
+    RANGE                    = 26 37 87 45
     NAME                     = Cm0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = INITIALCOND
-    RANGE                    = 31 47 102 49
+    RANGE                    = 26 54 87 62
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 67 19 87 29
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 26 19 46 29
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 102 0 113 86
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 0 0 101 11
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 0 75 101 86
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 0 12 11 76
     NAME                     = Cm0
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
     TYPE                     = FIELDCOND
-    RANGE                    = 13 35 120 43
+    RANGE                    = 12 30 101 36
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
 
   [SELECTION]
     TYPE                     = FIELDCOND
-    RANGE                    = 13 13 120 20
+    RANGE                    = 12 12 101 18
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
 
   [SELECTION]
     TYPE                     = FIELDCOND
-    RANGE                    = 103 13 120 86
+    RANGE                    = 88 12 101 74
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
 
   [SELECTION]
     TYPE                     = FIELDCOND
-    RANGE                    = 13 71 120 86
+    RANGE                    = 12 63 101 74
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
 
   [SELECTION]
     TYPE                     = FIELDCOND
-    RANGE                    = 13 13 30 70
+    RANGE                    = 12 12 25 62
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
 
   [SELECTION]
     TYPE                     = FIELDCOND
-    RANGE                    = 13 53 120 61
+    RANGE                    = 12 46 101 53
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
 
   [SELECTION]
     TYPE                     = FIELDCOND
-    RANGE                    = 54 21 79 34
+    RANGE                    = 47 19 66 29
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 54 21 79 34
+    RANGE                    = 47 19 66 29
     NAME                     = Ca(t).out
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 13 13 120 20
+    RANGE                    = 12 12 101 18
     NAME                     = Ca(t).out
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 103 21 120 86
+    RANGE                    = 88 19 101 74
     NAME                     = Ca(t).out
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 13 71 120 86
+    RANGE                    = 12 63 101 74
     NAME                     = Ca(t).out
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 13 13 30 70
+    RANGE                    = 12 12 25 62
     NAME                     = Ca(t).out
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 31 53 102 61
+    RANGE                    = 26 46 87 53
     NAME                     = Ca(t).out
     LOCATION                 = ELEMENT 
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 31 35 102 43
+    RANGE                    = 26 30 87 36
     NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 26 37 87 39
+    NAME                     = Cm(xy).out
     LOCATION                 = ELEMENT 
 
 
