@@ -2,7 +2,7 @@
 
   FILE_VERSION             = 5.5.6
   CREATED                  = Tue Jul 09 14:15:30 2019
-  LAST_EDIT                = Tue Jul 09 16:03:28 2019
+  LAST_EDIT                = Wed Jul 10 13:18:24 2019
 
 
 ; ******************************************************************************
@@ -32,7 +32,7 @@
     USE_HYSTERESIS           = no
     START_YEAR               = 2000
     START_TIME               = 14947200
-    DURATION                 = 10 d
+    DURATION                 = 1 h
     ISOTHERMAL_T_REF         = 20 C
     SOLVER                   = INTERNAL_CVODE_SOLVER
     VOC_DATABASE             = $(PROJECT_DIR)\CalciumSilicate-Toluene.vdb
@@ -231,6 +231,11 @@
       TYPE                     = VOCMASS
       VALUE                    = 0 mg/m3
 
+    [INIT_COND]
+      NAME                     = Cm0
+      TYPE                     = VOCMASS
+      VALUE                    = 100 mg/m3
+
 
 
   [FIELD_CONDITIONS]
@@ -261,8 +266,8 @@
 [DISCRETISATION]
 
   GEOMETRY                 = PLANE2D
-  X_STEPS                  = 0.02 0.09 0.016 1.25 0.016 0.09 0.02 0.09 0.016 6.5 0.016 0.09 0.02 0.09 0.016 1.25 0.016 0.09 0.02 m
-  Y_STEPS                  = 0.02 0.09 0.016 0.25 7 0.25 0.01 0.02 0.01 0.1 0.01 0.02 0.01 0.5 0.016 0.09 0.02 m
+  X_STEPS                  = 0.02 0.090000001 0.016 1.25 0.016 0.090000001 0.02 0.090000001 0.016 6.5 0.016 0.090000001 0.02 0.090000001 0.016 1.25 0.016 0.090000001 0.02 m
+  Y_STEPS                  = 0.02 0.090000001 0.016 0.25 7 0.25 0.0099999999 0.02 0.0099999999 0.1 0.0099999999 0.02 0.0099999999 0.5 0.016 0.090000001 0.02 m
   Z_STEPS                  = 1 m
   THETA_Z                  = 0
   PIE_SLICE_ANGLE          = 360
@@ -277,6 +282,38 @@
     MAX_HYG_RELHUM           = 95 %
     EXP_REF_TEMPER           = 0 C
     EXP_REF_RELHUM           = 60 %
+
+
+  [GRIDS]
+
+    [OUTPUT_GRID]
+      NAME                     = hours
+      INTERVAL                 = 0 d            1 h            
+
+
+  [FORMATS]
+
+    [OUTPUT_FORMAT]
+      NAME                     = Ca(t)
+      TYPE                     = FIELD
+      FIELD_TYPE               = VOCDENSG
+      SPACE_TYPE               = MEAN
+      TIME_TYPE                = NONE
+      TIME_UNIT                = d
+      VALUE_UNIT               = mg/m3
+      PRECISION                = 9
+      WIDTH                    = 12
+      FORMAT                   = DEFAULT
+      BINARY                   = no
+
+
+  [FILES]
+
+    [OUTPUT_FILE]
+      NAME                     = Ca(t).out
+      OUTPUT_GRID              = hours
+      OUTPUT_FORMAT            = Ca(t)
+
 
 
 ; ******************************************************************************
@@ -544,6 +581,20 @@
     CONDITION_TYPE           = VOCMASS
 
   [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 4 11 14 11
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
+    TYPE                     = INITIALCOND
+    RANGE                    = 4 7 14 7
+    NAME                     = Cm0
+    LOCATION                 = ELEMENT 
+    CONDITION_TYPE           = VOCMASS
+
+  [SELECTION]
     TYPE                     = FIELDCOND
     RANGE                    = 3 5 15 5
     NAME                     = ACH
@@ -591,6 +642,48 @@
     NAME                     = ACH
     LOCATION                 = ELEMENT 
     CONDITION_TYPE           = VOCCHANGE
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 9 4 9 4
+    NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 3 3 15 3
+    NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 15 4 15 13
+    NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 3 13 15 13
+    NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 3 3 3 12
+    NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 4 9 14 9
+    NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 4 5 14 5
+    NAME                     = Ca(t).out
+    LOCATION                 = ELEMENT 
 
 
 ; ******************************************************************************

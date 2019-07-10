@@ -70,6 +70,22 @@ ENTITY
 	1    
 ENTITY 
 	Toluene
-	Calcium silicate
+	Plywood
 	1.0   	#(estimated)
 	120    #(estimated)
+ENTITY 
+	Toluene
+	R13 Fiber Glass
+	1.0   	#(estimated)
+	120    #(estimated)
+ENTITY 
+	Toluene
+	Gypsum Board
+	1.0   	#(estimated)
+	120    #(estimated)
+ENTITY 
+	Toluene
+	Carpet
+	1.0   	#(estimated)
+	120    #(estimated)
+

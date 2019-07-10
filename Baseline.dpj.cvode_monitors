@@ -1,0 +1,6 @@
+CVODE monitor variables, starting solver at: Wed Jul 10 13:18:24 2019
+
+Project: C:\Users\sophia\Desktop\reference_house_IAQ\Baseline.dpj
+
+Steps                Time         RhsEvals JacEvals NNiters  NNfails  Order StepSize     RelTol    
+     24           4215.5987559586 32       1        31       0        3       858.006071 1.0000e-05

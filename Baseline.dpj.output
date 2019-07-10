@@ -1,0 +1,48 @@
+.Reading project: 'C:\Users\sophia\Desktop\reference_house_IAQ\Baseline.dpj'
+  .Reading material file 'C:\Program Files (x86)\BEESL\CHAMPS_BES 1.6\examples\materials\Gypsum Board.mat'
+  .Reading material file 'C:\Program Files (x86)\BEESL\CHAMPS_BES 1.6\examples\materials\Air.mat'
+.Project read successfully!
+.Initialization of solver:
+  .Setting up project
+    .Transferring materials and conditions
+    .Creating element index matrix and selecting used elements
+    .Numbering elements and creating vector with used elements
+    .Elements numbered, number of elements: 323
+    .Calculating element geometry
+      .Grid width  (x-dimension) = 9.716 m
+      .Grid height (y-dimension) = 8.432 m
+    .Assigning materials.
+    .Assigning initial conditions
+    .Assigning field conditions
+    .Setting up horizontal sides matrix
+    .Setting up vertical sides matrix
+    .Assigning boundary conditions
+    .Assigning contact conditions
+    .Renumbering sides and creating final sides vector
+    .Side vector created, number of sides: 610
+    .Linking elements to sides
+    .Setting up output grids
+    .Assigning output ranges
+  .Initializing climate conditions
+  .Initializing material functions
+    .Initializing material 'R13 Fiber Glass'
+    .Initializing material 'Plywood'
+      .Converting: Dl -> Psi
+    .Initializing material 'Gypsum Board'
+      .Converting: Dl -> Psi
+    .Initializing material 'Air'
+    .Initializing material 'Carpet'
+      .Converting: Dl -> Psi
+    .Creating output files
+    .Setting up simulation time frame
+    .Number of balance equations per element: 3
+    .Pre-calculating energy parameters
+    .Setting initial conditions
+    .Initializing CVODE integrator
+.Initialization complete!
+.Starting solver:
+
+Simtime     Simdate           Realtime    MeanSp       CurrentSp    ETC
+ 1.000 h    06/23/00  1:00:00 156 ms       6.410 h/s    6.410 h/s    0.000 s
+
+.Simulation finished after : 171 ms
