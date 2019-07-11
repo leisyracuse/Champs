@@ -1,15 +1,38 @@
 # Delphin 5 Output file
 # TYPE          = FIELD
-# PROJECT_FILE  = C:\Users\sophia\Desktop\reference_house_IAQ\Baseline.dpj
-# CREATED       = Wed Jul 10 13:18:24 2019
+# PROJECT_FILE  = C:\Users\allen\ownCloud\Reference house champs\coarse_grid\Baseline.dpj
+# CREATED       = Thu Jul 11 04:19:00 2019
 # QUANTITY      = Intrinsic VOC density in gas phase
 # SPACE_TYPE    = MEAN
 # TIME_TYPE     = NONE
 # VALUE_UNIT    = mg/m3
-# TIME_UNIT     = d
+# TIME_UNIT     = h
 
 ELEMENTS = 0
 
 
 0            	0
-0.0416667    	3.46328833e-05
+1            	0.717046333
+2            	0.76838296
+3            	0.743909733
+4            	0.705419955
+5            	0.666175082
+6            	0.628959179
+7            	0.594131955
+8            	0.561530849
+9            	0.530953683
+10           	0.5022152
+11           	0.475170103
+12           	0.449698376
+13           	0.425695209
+14           	0.403068271
+15           	0.381732701
+16           	0.36161073
+17           	0.342629921
+18           	0.324722778
+19           	0.30782619
+20           	0.291881024
+21           	0.276831868
+22           	0.262626714
+23           	0.249216748
+24           	0.236556118

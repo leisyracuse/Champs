@@ -2,7 +2,7 @@
 
   FILE_VERSION             = 5.5.6
   CREATED                  = Tue Jul 09 14:15:30 2019
-  LAST_EDIT                = Wed Jul 10 13:59:28 2019
+  LAST_EDIT                = Wed Jul 10 14:06:21 2019
 
 
 ; ******************************************************************************
@@ -208,7 +208,7 @@
       TYPE                     = AIRCHANGERATE
       NAME                     = ACH
       KIND                     = CONSTANT
-      CONSTVALUE               = 0.24 1/h
+      CONSTVALUE               = 1 1/h
 
     [CLIMATE_COND]
       TYPE                     = VOCDENSG
@@ -747,7 +747,13 @@
 
   [SELECTION]
     TYPE                     = FIELDOUTPUT
-    RANGE                    = 26 37 87 39
+    RANGE                    = 26 37 87 45
+    NAME                     = Cm(xy).out
+    LOCATION                 = ELEMENT 
+
+  [SELECTION]
+    TYPE                     = FIELDOUTPUT
+    RANGE                    = 26 54 87 62
     NAME                     = Cm(xy).out
     LOCATION                 = ELEMENT 
 

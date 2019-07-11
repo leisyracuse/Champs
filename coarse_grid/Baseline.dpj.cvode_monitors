@@ -1,6 +1,6 @@
-CVODE monitor variables, starting solver at: Wed Jul 10 14:06:30 2019
+CVODE monitor variables, starting solver at: Thu Jul 11 04:19:01 2019
 
-Project: \\hd.ad.syr.edu\01\16f877\Documents\Desktop\Champs-master\Champs-master\Baseline.dpj
+Project: C:\Users\allen\ownCloud\Reference house champs\coarse_grid\Baseline.dpj
 
 Steps                Time         RhsEvals JacEvals NNiters  NNfails  Order StepSize     RelTol    
     103           3797.0997926767 119      2        118      0        5       301.957596 1.0000e-05
