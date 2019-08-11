@@ -1,0 +1,29 @@
+D6MARLZ! 006.000
+
+[IDENTIFICATION]
+  NAME                     = DE: Spanplatte |EN: Particle board |RU: плита для крепления
+  PRODUCER                 = DE: Pfleiderer |EN: Pfleiderer |RU: Pfleiderer
+  PRODUCT_ID               = DE: V100/E1F0 |EN: V100/E1F0 |RU: V100/E1F0
+  LABORATORY               = DE: MASEA |EN: MASEA |RU: MASEA
+  DATE                     = 26.02.16
+  COLOUR                   = #ff409020
+  FLAGS                    = AIR_TIGHT WOOD_BASED 
+  USE_INSTEAD              = 0
+  CATEGORY                 = BUILDING_BOARDS TIMBER
+  DBTYPE                   = 1,7,9
+  HATCHING                 = 13
+
+
+[STORAGE_BASE_PARAMETERS]
+  RHO                      = 620 kg/m3
+  CE                       = 1700 J/kgK
+  THETA_POR                = 0.53 m3/m3
+  THETA_EFF                = 0.53 m3/m3
+  THETA_80                 = 0.11 m3/m3
+
+
+[TRANSPORT_BASE_PARAMETERS]
+  LAMBDA                   = 0.14 W/mK
+  AW                       = 0.0333333 kg/m2s05
+  MEW                      = 44 -
+

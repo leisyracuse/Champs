@@ -1,0 +1,44 @@
+2019-08-08 20:58:21	[Progress]	[main]                                          	DELPHIN 6 Solver - Parallel Version
+2019-08-08 20:58:21	[Progress]	[main]                                          	All rights reserved.
+2019-08-08 20:58:21	[Progress]	[main]                                          	
+2019-08-08 20:58:21	[Progress]	[main]                                          	The DELPHIN 6 Development Team:
+2019-08-08 20:58:21	[Progress]	[main]                                          	Andreas Nicolai, Stefan Vogelsang, Anne Paepcke, Heiko Fechner, John Grunewald
+2019-08-08 20:58:21	[Progress]	[main]                                          	Contact: andreas.nicolai [at] tu-dresden.de
+2019-08-08 20:58:21	[Progress]	[main]                                          	
+2019-08-08 20:58:21	[Progress]	[Version::printCompilerVersion]                 	Compiled with Visual Studio 2015
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	Material model and file format library version   6.1.0
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	IBK library version                              4.2.4
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	DATAIO library version                           7.1.4
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	CCM library version                              1.1.0
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	JADE library version                             1.3.1
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	JAC library version                              1.6.0
+2019-08-08 20:58:21	[Progress]	[ModelImpl::printVersionStrings]                	Salt library version                             1.0.0
+2019-08-08 20:58:21	[Progress]	                                                	
+2019-08-08 20:58:21	[Progress]	[SolverControlFramework::printVersionInfo]      	Integrator Framework Version                     0.9.6
+2019-08-08 20:58:21	[Progress]	[SolverControlFramework::printVersionInfo]      	SUNDIALS Release Version                         2.7.0
+2019-08-08 20:58:21	[Progress]	[main]                                          	
+2019-08-08 20:58:21	[Progress]	[main]                                          	OpenMP parallelization enabled: using 4 thread(s)
+2019-08-08 20:58:21	[Progress]	[main]                                          	
+2019-08-08 20:58:21	[Progress]	[main]                                          	Number of threads selected from variable OMP_NUM_THREADS = 4
+2019-08-08 20:58:21	[Progress]	[main]                                          	
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	Executable path:    'C:/Program Files/IBK/Delphin 6.0/DelphinSolver.exe'
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	Project file:       'C:/Users/Allen/Desktop/New folder/VOC1.d6p'
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	Project directory:  'C:/Users/Allen/Desktop/New folder'
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	Output root dir:    'C:/Users/Allen/Desktop/New folder/VOC1'
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	  log directory:      'C:/Users/Allen/Desktop/New folder/VOC1/log'
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	  var/data directory: 'C:/Users/Allen/Desktop/New folder/VOC1/var'
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	  results directory:  'C:/Users/Allen/Desktop/New folder/VOC1/results'
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	Reading project file  : VOC1.d6p
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	Project read successfully.
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	Path Placeholders
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	  Climate Database          -> C:/Program Files/IBK/Delphin 6.0/resources/DB_climate
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	  Material Database         -> C:/Program Files/IBK/Delphin 6.0/resources/DB_materials
+2019-08-08 20:58:21	[Progress]	[ModelImpl::init]                               	  Project Directory         -> C:/Users/Allen/Desktop/New folder
+2019-08-08 20:58:21	[Progress]	[ModelImpl::setupCalculation]                   	Initializing model
+2019-08-08 20:58:21	[Progress]	[ModelImpl::setupSolverParameter]               	  
+2019-08-08 20:58:21	[Progress]	[ModelImpl::setupSolverParameter]               	  Initializing Solver Parameter
+2019-08-08 20:58:21	[Progress]	[ModelImpl::setupSolverParameter]               	    Automatically setting NonLinSolverConvCoeff to 0.1
+2019-08-08 20:58:21	[Error   ]	[ModuleRegistry::createModuleBE]                	There is no BE module known with identifier 'BEHeatMoisturePollutant'.
+2019-08-08 20:58:21	[Error   ]	[ModelImpl::setupCalculation]                   	Error during model setup.
+2019-08-08 20:58:21	[Error   ]	[main]                                          	Critical error, simulation aborted.

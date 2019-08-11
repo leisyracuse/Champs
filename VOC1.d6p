@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="6.0">
+	<ProjectInfo created="Thu Aug 8 20:50:24 2019" lastEdited="Thu Aug 8 20:58:20 2019">
+		<Comment>&#x0A;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;</Comment>
+	</ProjectInfo>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--DirectoryPlaceholders section defines strings to be substituted with directories-->
+	<DirectoryPlaceholders>
+		<Placeholder name="Climate Database">C:/Program Files/IBK/Delphin 6.0/resources/DB_climate</Placeholder>
+		<Placeholder name="Material Database">C:/Program Files/IBK/Delphin 6.0/resources/DB_materials</Placeholder>
+	</DirectoryPlaceholders>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Model data, solver settings, general parameters-->
+	<Init>
+		<SimulationParameter>
+			<BalanceEquationModule>BEHeatMoisturePollutant</BalanceEquationModule>
+			<ClimateDataFilePath>${Climate Database}/Europe/Germany/TRY2011/DE-01-TRY-2010__Bremerhaven__Jahr_00000K0_00007m.c6b</ClimateDataFilePath>
+			<IBK:Flag name="UseKirchhoffPotential">false</IBK:Flag>
+			<IBK:Flag name="PreventOverfilling">false</IBK:Flag>
+			<IBK:Flag name="UseStrictMaterialChecks">false</IBK:Flag>
+			<DefaultInitialCondition name="DefaultRelativeHumidity" unit="%">50</DefaultInitialCondition>
+		</SimulationParameter>
+		<ModelSettingsVOC>
+			<VOCDatabase>C:/Users/Allen/Desktop/New folder/DB_Pollutants/CalciumSilicate-Toluene.vdb</VOCDatabase>
+			<VOCID>Toluene</VOCID>
+			<MaterialMapping>Air gap 50 mm (vertical) [18] == Air</MaterialMapping>
+			<MaterialMapping>Gypsum [311] == Gypsum Board</MaterialMapping>
+		</ModelSettingsVOC>
+	</Init>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--List of all materials used in this construction-->
+	<Materials>
+		<MaterialReference name="Gypsum [311]" color="#ff10f0f0" hatchCode="13">${Material Database}/Gips_311.m6</MaterialReference>
+		<MaterialReference name="Air gap 50 mm (vertical) [18]" color="#ff5020a0" hatchCode="13">${Material Database}/AirGapVertical50mm_18.m6</MaterialReference>
+	</Materials>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Discretization data (grid and sketches)-->
+	<Discretization>
+		<XSteps unit="m">0.1 </XSteps>
+		<YSteps unit="m">0.0114761 0.0114761 0.0114761 0.0114761 0.0114761 0.0106045 0.00815731 0.00627485 0.00482681 0.00371293 0.0028561 0.002197 0.00169 0.0013 0.001 0.001 0.0013 0.00169 0.002197 0.0028561 0.00371293 0.00482681 0.00627485 0.00815731 0.0106045 0.0114761 0.0114761 0.0114761 0.0114761 0.0114761 </YSteps>
+	</Discretization>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Conditions data, specifies how construction interacts with environment-->
+	<Conditions>
+
+		<ClimateConditions>
+
+			<ClimateCondition name="ACH" type="FluidChangeRate" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="1/h">1</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="New climate condition" type="Temperature" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="C">20</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="New climate condition [2]" type="RelativeHumidity" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="%">50</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="New climate condition [3]" type="VOCDensity" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="µg/m3">0</IBK:Parameter>
+			</ClimateCondition>
+		</ClimateConditions>
+
+		<InitialConditions>
+
+			<InitialCondition name="Cm0" type="VOCMass">
+				<IBK:Parameter name="Value" unit="mg/m3">100</IBK:Parameter>
+			</InitialCondition>
+
+			<InitialCondition name="Ca0" type="VOCMass">
+				<IBK:Parameter name="Value" unit="mg/m3">0</IBK:Parameter>
+			</InitialCondition>
+		</InitialConditions>
+
+		<FieldConditions>
+
+			<FieldCondition name="ACH" type="AirChange">
+				<IBK:Flag name="UseFlowRate">false</IBK:Flag>
+				<CCReference type="Temperature">New climate condition</CCReference>
+				<CCReference type="RelativeHumidity">New climate condition [2]</CCReference>
+				<CCReference type="VOCDensity">New climate condition [3]</CCReference>
+				<CCReference type="FluidChangeRate">ACH</CCReference>
+			</FieldCondition>
+		</FieldConditions>
+	</Conditions>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Contains definitions of output files and schedules for outputs.-->
+	<Outputs>
+		<!--General parameters-->
+		<IBK:Unit name="TimeUnit">h</IBK:Unit>
+		<!--List of all Output schedules-->
+		<OutputGrids>
+			<OutputGrid name="Profiles (1.5 d)">
+				<Interval>
+					<IBK:Parameter name="Duration" unit="a">0</IBK:Parameter>
+					<IBK:Parameter name="StepSize" unit="d">1.5</IBK:Parameter>
+				</Interval>
+			</OutputGrid>
+			<OutputGrid name="Scalars (1 h)">
+				<Interval>
+					<IBK:Parameter name="Duration" unit="a">0</IBK:Parameter>
+					<IBK:Parameter name="StepSize" unit="h">1</IBK:Parameter>
+				</Interval>
+			</OutputGrid>
+		</OutputGrids>
+		<!--List of all Output files-->
+		<OutputFiles>
+			<OutputFile name="Temperature profile">
+				<Quantity unit="C">Temperature</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Profiles (1.5 d)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Relative humidity profile">
+				<Quantity unit="%">RelativeHumidity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Profiles (1.5 d)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Moisture content profile">
+				<Quantity unit="kg/m3">MoistureMassDensity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Profiles (1.5 d)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Moisture content integral">
+				<Quantity unit="kg">MoistureMassDensity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Integral</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+		</OutputFiles>
+	</Outputs>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--List of all assignments of materials and conditions-->
+	<Assignments>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Temperature profile</Reference>
+			<Range>0 0 0 29</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Relative humidity profile</Reference>
+			<Range>0 0 0 29</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Moisture content profile</Reference>
+			<Range>0 0 0 29</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Moisture content integral</Reference>
+			<Range>0 0 0 29</Range>
+		</Assignment>
+
+		<Assignment type="Material" location="Element">
+			<Reference>Air gap 50 mm (vertical) [18]</Reference>
+			<Range>0 15 0 29</Range>
+		</Assignment>
+
+		<Assignment type="Material" location="Element">
+			<Reference>Gypsum [311]</Reference>
+			<Range>0 0 0 14</Range>
+		</Assignment>
+
+		<Assignment type="InitialCondition" location="Element">
+			<Reference>Cm0</Reference>
+			<Range>0 0 0 14</Range>
+		</Assignment>
+
+		<Assignment type="InitialCondition" location="Element">
+			<Reference>Ca0</Reference>
+			<Range>0 15 0 29</Range>
+		</Assignment>
+
+		<Assignment type="FieldCondition" location="Element">
+			<Reference>ACH</Reference>
+			<Range>0 15 0 29</Range>
+		</Assignment>
+	</Assignments>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+</DelphinProject>

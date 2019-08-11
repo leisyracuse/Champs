@@ -1,0 +1,431 @@
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	DELPHIN 6 Solver - Parallel Version
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	All rights reserved.
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	The DELPHIN 6 Development Team:
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	Andreas Nicolai, Stefan Vogelsang, Anne Paepcke, Heiko Fechner, John Grunewald
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	Contact: andreas.nicolai [at] tu-dresden.de
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	
+2019-08-08 21:28:59	[Progress]	[Version::printCompilerVersion]                 	Compiled with Visual Studio 2015
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	Material model and file format library version   6.1.0
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	IBK library version                              4.2.4
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	DATAIO library version                           7.1.4
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	CCM library version                              1.1.0
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	JADE library version                             1.3.1
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	JAC library version                              1.6.0
+2019-08-08 21:28:59	[Progress]	[ModelImpl::printVersionStrings]                	Salt library version                             1.0.0
+2019-08-08 21:28:59	[Progress]	                                                	
+2019-08-08 21:28:59	[Progress]	[SolverControlFramework::printVersionInfo]      	Integrator Framework Version                     0.9.6
+2019-08-08 21:28:59	[Progress]	[SolverControlFramework::printVersionInfo]      	SUNDIALS Release Version                         2.7.0
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	OpenMP parallelization enabled: using 4 thread(s)
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	Number of threads selected from variable OMP_NUM_THREADS = 4
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	Executable path:    'C:/Program Files/IBK/Delphin 6.0/DelphinSolverUI.exe'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	Project file:       'C:/Users/Allen/Desktop/New folder/EmissionTest_BP1_Hexanal_h0.5.d6p'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	Project directory:  'C:/Users/Allen/Desktop/New folder'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	Output root dir:    'C:/Users/Allen/Desktop/New folder/EmissionTest_BP1_Hexanal_h0.5'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	  log directory:      'C:/Users/Allen/Desktop/New folder/EmissionTest_BP1_Hexanal_h0.5/log'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	  var/data directory: 'C:/Users/Allen/Desktop/New folder/EmissionTest_BP1_Hexanal_h0.5/var'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	  results directory:  'C:/Users/Allen/Desktop/New folder/EmissionTest_BP1_Hexanal_h0.5/results'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	Reading project file  : EmissionTest_BP1_Hexanal_h0.5.d6p
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	Project read successfully.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	Path Placeholders
+2019-08-08 21:28:59	[Progress]	[ModelImpl::init]                               	  Project Directory         -> C:/Users/Allen/Desktop/New folder
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupCalculation]                   	Initializing model
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupSolverParameter]               	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupSolverParameter]               	  Initializing Solver Parameter
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupSolverParameter]               	    Automatically setting NonLinSolverConvCoeff to 0.1
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupEquations]                     	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupEquations]                     	  Instantiating Balance Equation Module:
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupEquations]                     	    'Energy and pollutant Balance Equation (IBK)' [BEHeatPollutant]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupEquations]                     	      3 balance equation(s)
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDefinitions]                   	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDefinitions]                   	  Checking assignments for valid ranges
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	  Removed unused definitions from project
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    2 materials (of 2) used:
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	      * Particle board [348]
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	      * Air gap 50 mm (vertical) [18]
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    0 interface definitions (of 0) used:
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    1 initial conditions (of 1) used:
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * Initial VOC concentration
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    1 field conditions (of 1) used:
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * Air change of chamber
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    1 contact conditions (of 1) used:
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * VOC mass transfer between material and air
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    0 boundary conditions (of 0) used:
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    0 climate conditions (of 0) used:
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    5 output file definition (of 5) used:
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * VOC concentration chamber
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * VOC Permeability
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * VOC concentration profile (gas)
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * Emission flux
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * Temperature
+2019-08-08 21:28:59	[Progress]	[Project::clean]                                	    2 output grids (of 2) used:
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * Fields and Profiles
+2019-08-08 21:28:59	[Progress]	[Project::printDefinitionList]                  	      * Scalars
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDefinitions]                   	  Creating default initial conditions
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDefinitions]                   	    Default initial temperature = 50 degC
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDefinitions]                   	    Default initial relative humidity = 80 %
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDefinitions]                   	  Creating interface definitions for engineering models
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupMaterials]                     	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupMaterials]                     	  Reading material data files
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupMaterials]                     	    C:/Users/Allen/Desktop/New folder/materials/SpanplatteV100E1F0_348.m6
+2019-08-08 21:28:59	[Progress]	[Material::read]                                	    Reading material file 'SpanplatteV100E1F0_348.m6'.
+2019-08-08 21:28:59	[Progress]	[Material::prepareCalculation]                  	      Preparing material 'Particle board' ID: 348 for calculation.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupMaterials]                     	    C:/Users/Allen/Desktop/New folder/materials/AirGapVertical50mm_18.m6
+2019-08-08 21:28:59	[Progress]	[Material::read]                                	    Reading material file 'AirGapVertical50mm_18.m6'.
+2019-08-08 21:28:59	[Progress]	[Material::prepareCalculation]                  	      Preparing material 'Air gap 50 mm (vertical)' ID: 18 for calculation.
+2019-08-08 21:28:59	[Progress]	[Pollutants::init]                              	  Setting up pollutant module
+2019-08-08 21:28:59	[Progress]	[Pollutants::init]                              	    Reading pollutant database '${Project Directory}/DB_Pollutants/voc_db_tests.vdb'.
+2019-08-08 21:28:59	[Progress]	                                                	    VOC database read with 2 VOCs, 1 materials
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupClimateData]                   	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupClimateData]                   	  Reading climate data files and initializing calculation
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupClimateData]                   	    Initializing surfaces (radiation calculation) in CCM
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupClimateData]                   	      Surface #0 registered for horizontal plane
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupClimateData]                   	    Reading CCD files
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupConnections]                   	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupConnections]                   	  Connecting Definitions
+2019-08-08 21:28:59	[Progress]	[FieldCond::assignClimateCond]                  	    Auto-generating CC 'Temperature' for constant value: 20 C, referenced from  FC 'Air change of chamber'
+2019-08-08 21:28:59	[Progress]	[FieldCond::assignClimateCond]                  	    Auto-generating CC 'RelativeHumidity' for constant value: 50 %, referenced from  FC 'Air change of chamber'
+2019-08-08 21:28:59	[Progress]	[FieldCond::assignClimateCond]                  	    Auto-generating CC 'VOCDensity' for constant value: 0 µg/m3, referenced from  FC 'Air change of chamber'
+2019-08-08 21:28:59	[Progress]	[FieldCond::assignClimateCond]                  	    Auto-generating CC 'FluidChangeRate' for constant value: 1 1/h, referenced from  FC 'Air change of chamber'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	  Module Setup
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	    Selecting standard flux modules:
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	      FluxHeatConduction
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	      FluxVOCDiffusion
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	    No boundary conditions parameterized.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	    Instantiating flux modules
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	      [FluxHeatConduction]           Heat Conduction Flux (IBK) 
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	      [FluxVOCDiffusion]             VOC/Pollutant Diffusion Flux (IBK) 
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	    Selecting standard source modules:
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	      AirChange
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	    Instantiating source modules
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupModules]                       	      [SourceAirChange]              Air exchange between an air filled cavity and outside air 
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	  Creating auxiliary model data
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	  Initializing quantities
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	    8 States
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [0] EnergyDensity 'Energy density'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [1] IntrinsicVOCDensity 'Intrinsic VOC density in gas phase in kg(VOCg)/m3(gas)'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [2] PartialPressureVOC 'VOC partial pressure'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [3] Temperature 'Temperature'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [4] ThermalConductivity 'Thermal conductivity'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [5] VOCMassDensityAdsorbed 'Solid phase VOC mass density'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [6] VOCMassDensityGas 'Gas phase VOC mass density'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [7] VOCPermeability 'VOC/pollutant permeability in gas phase'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	    5 Internal Fluxes
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [0] TotalFluxHeat 'Summation flux for balance equation Heat'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [1] TotalFluxPollutant 'Summation flux for balance equation Pollutant'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [2] TotalFluxPollutantSolid 'Summation flux for balance equation PollutantSolid'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [3] FluxHeatConduction 'Heat conduction flux'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [4] FluxVOCDiffusion 'VOC diffusion mass flux'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	    3 Boundary Condition Fluxes
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [0] TotalFluxHeat 'Summation flux for balance equation Heat'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [1] TotalFluxPollutant 'Summation flux for balance equation Pollutant'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [2] TotalFluxPollutantSolid 'Summation flux for balance equation PollutantSolid'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	    8 Sources
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [0] TotalSourceHeat 'Summation source for balance equation Heat'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [1] TotalSourcePollutant 'Summation source for balance equation Pollutant'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [2] TotalSourcePollutantEmission 'Summation source for balance equation PollutantEmission'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [3] MoistureEnthalpyAirChange 'Source: Enthalpy associated with moisture load from air change'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [4] ThermalLoadAirChange 'Source: Thermal load from air change'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [5] VOCDesorptionRate 'Source: Mass production rate of gas phase VOC from emission of solid phase'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [6] VOCLoadAirChange 'Source: VOC mass concentration gain due to air change'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupQuantities]                    	      [7] VOCAdsorptionRate 'Source: Mass production rate of solid phase VOC from condensation out of gas phase'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	  Discretization and Grid Generation
+2019-08-08 21:28:59	[Progress]	[ModelImpl::initElementMatrix3D]                	    Grid width  (x-dim, radius) = 1.1125 m
+2019-08-08 21:28:59	[Progress]	[ModelImpl::initElementMatrix3D]                	    Grid height (y-dim, height) = 1 m
+2019-08-08 21:28:59	[Progress]	[ModelImpl::initElementMatrix3D]                	    Grid depth  (z-dimension)   = 1 m
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignMaterials]                    	    Assigning materials
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignMaterials]                    	      'Air gap 50 mm (vertical)' [AirGapVertical50mm_18.m6]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignMaterials]                    	        [159, 0, 0] - [159, 0, 0]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignMaterials]                    	      'Particle board' [SpanplatteV100E1F0_348.m6]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignMaterials]                    	        [0, 0, 0] - [158, 0, 0]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInitialConditions]            	    Assigning Initial Conditions
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInitialConditions]            	      'Default initial relative humidity' [RelativeHumidity]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInitialConditions]            	        assigned to [0, 0, 0] - [159, 0, 0]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInitialConditions]            	      'Default initial temperature' [Temperature]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInitialConditions]            	        assigned to [0, 0, 0] - [159, 0, 0]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInitialConditions]            	      'Initial VOC concentration' [VOCMass]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInitialConditions]            	        assigned to [0, 0, 0] - [158, 0, 0]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignFieldConditions]              	    Assigning field conditions
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignFieldConditions]              	      'Air change of chamber' [AirChange]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignFieldConditions]              	        assigned to [159, 0, 0] - [159, 0, 0]
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Grid numbering:
+2019-08-08 21:28:59	[Progress]	[Grid::generate]                                	      Optimizing numbering in domain #1.
+2019-08-08 21:28:59	[Progress]	[Grid::generate]                                	        Domain element range: 0..159, size = 160
+2019-08-08 21:28:59	[Progress]	[Grid::rectilinearNumbering]                    	        Numbering Order: col, stack, row [IKJ] (loop order)
+2019-08-08 21:28:59	[Progress]	[Grid::generate]                                	        Optimizing CMK numbering starting from node:
+2019-08-08 21:28:59	[Progress]	[Grid::generate]                                	          0 -> hbw = 1
+2019-08-08 21:28:59	[Progress]	[Grid::generate]                                	          159 -> hbw = 1
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	      CMK (optimized) - max. half bandwidth: 1
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	      Total elements count : 160
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	      Used elements count  : 160
+2019-08-08 21:28:59	[Warning ]	[ModelImpl::setupDiscretization]                	    No interfaces assigned, construction is tight/adiabatic at all boundaries.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	    Assigning contact conditions
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	      'VOC mass transfer between material and air'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Removing unused sides
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignOutputFiles]                  	    Assigning output file definitions for horizontal sides.
+2019-08-08 21:28:59	[Warning ]	[ModelImpl::setupDiscretization]                	    No interfaces assigned, construction is tight/adiabatic at all boundaries.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	    Assigning contact conditions
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	      'VOC mass transfer between material and air'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	        assigned to [158, 0, 0] - [158, 0, 0]  Right
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Removing unused sides
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignOutputFiles]                  	    Assigning output file definitions for vertical sides.
+2019-08-08 21:28:59	[Warning ]	[ModelImpl::setupDiscretization]                	    No interfaces assigned, construction is tight/adiabatic at all boundaries.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	    Assigning contact conditions
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	      'VOC mass transfer between material and air'
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Removing unused sides
+2019-08-08 21:28:59	[Progress]	[ModelImpl::assignOutputFiles]                  	    Assigning output file definitions for frontal sides.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Total side count   : 801
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Reduced side count : 159
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Creating Element -> Side links
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Computing weight-factors for boundary value extrapolation
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	    Grid complete.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	      Elements                        : 160
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	      Sides (total/internal/boundary) : 159/159/0
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	      Half-Bandwidth (element-based)  : 1
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDiscretization]                	      480 unknowns (= system size)
+2019-08-08 21:28:59	[Progress]	[ModelImpl::collectFieldConditionElementIndexes]	    Check field conditions
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDataStorage]                   	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupDataStorage]                   	  Initializing data storage vectors (memory allocation)
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupOutputs]                       	  
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupOutputs]                       	  Creating/opening output files
+2019-08-08 21:28:59	[Warning ]	[ModelImpl::createDataIOFiles]                  	    Boundary flux with ID name 'FluxVOCDiffusion' is not being generated with current set of selected modules. Output flux, if requested, will be always 0.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::createDataIOFiles]                  	    Output definition 'Emission flux' is assigned to at least one internal side, therefore field flux sign convention is used.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupCalculation]                   	  Composing initial condition vector
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupCalculation]                   	  Input value checks
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupCalculation]                   	    Checking modules for runtime exceptions before starting calculation.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupCalculation]                   	    Checking sources for runtime exceptions before starting calculation.
+2019-08-08 21:28:59	[Progress]	[ModelImpl::setupCalculation]                   	    Checking flux modules for runtime exceptions before starting calculation.
+2019-08-08 21:28:59	[Progress]	[Model::init]                                   	Initialization Model Interface
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::lesInterface]               	
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::lesInterface]               	Creating Linear Equation Solver Modules
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::lesInterface]               	  Number of unknowns           : 480
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::lesInterface]               	  Element-based half-Bandwidth : 1
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::lesInterface]               	  Using generic Band solver with bandwidth 11!
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::integratorInterface]        	
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::integratorInterface]        	Creating Integrator
+2019-08-08 21:28:59	[Progress]	[ModelInterfaceODE::integratorInterface]        	  Using CVODE integrator.
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	Model initialization complete.
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	
+2019-08-08 21:28:59	[Progress]	[SolverThread::run]                             	Creating solver framework
+2019-08-08 21:28:59	[Progress]	[IntegratorSundialsCVODE::init]                 	Initializing CVODE integrator
+2019-08-08 21:28:59	[Progress]	[IntegratorSundialsCVODE::init]                 	  Setting NonlinConvCoef to 0.1.
+2019-08-08 21:28:59	[Progress]	[IntegratorSundialsCVODE::init]                 	  Setting MaxNonLinIters (maxcor) to 3.
+2019-08-08 21:28:59	[Progress]	[IntegratorSundialsCVODE::init]                 	  Initializing LES solver implementation
+2019-08-08 21:28:59	[Progress]	[SolverControlFramework::run]                   	
+2019-08-08 21:28:59	[Progress]	[SolverControlFramework::run]                   	Running solver from time t=0
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	Simtime     Simdate           Realtime    MeanSpeed    CurrentSpeed ETC
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 0.000 s    01.01.00  0:00:00  0.007 s     0.000 s/s    0.000 s/s   ---
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 1.000 min  01.01.00  0:01:00  0.056 s    17.999 min/s 20.499 min/s  5.853 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 2.000 min  01.01.00  0:02:00  0.114 s    17.549 min/s 18.659 min/s  6.429 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 3.000 min  01.01.00  0:03:00  0.126 s    23.832 min/s 25.188 min/s  4.762 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 4.000 min  01.01.00  0:04:00  0.138 s    28.961 min/s 30.455 min/s  3.938 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 5.000 min  01.01.00  0:05:00  0.147 s    34.045 min/s 35.692 min/s  3.360 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 6.000 min  01.01.00  0:06:00  0.156 s    38.500 min/s 40.251 min/s  2.979 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 7.000 min  01.01.00  0:07:00  0.164 s    42.616 min/s 44.450 min/s  2.697 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 8.000 min  01.01.00  0:08:00  0.173 s    46.321 min/s 48.212 min/s  2.486 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	 9.000 min  01.01.00  0:09:00  0.181 s    49.692 min/s 51.624 min/s  2.322 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	10.000 min  01.01.00  0:10:00  0.189 s    52.825 min/s 54.787 min/s  2.187 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	11.000 min  01.01.00  0:11:00  0.210 s    52.262 min/s 54.001 min/s  2.219 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	12.000 min  01.01.00  0:12:00  0.223 s    53.915 min/s 55.609 min/s  2.154 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	13.000 min  01.01.00  0:13:00  0.231 s    56.231 min/s 57.929 min/s  2.068 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	14.000 min  01.01.00  0:14:00  0.239 s    58.523 min/s  1.004 h/s    1.989 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	15.000 min  01.01.00  0:15:00  0.240 s     1.042 h/s    1.072 h/s    1.861 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	16.000 min  01.01.00  0:16:00  0.247 s     1.078 h/s    1.108 h/s    1.800 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	17.000 min  01.01.00  0:17:00  0.255 s     1.111 h/s    1.142 h/s    1.748 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	18.000 min  01.01.00  0:18:00  0.263 s     1.140 h/s    1.170 h/s    1.706 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	19.000 min  01.01.00  0:19:00  0.271 s     1.168 h/s    1.198 h/s    1.665 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	EmissionTest_BP1_Hexanal_h0.5.d6p
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	20.000 min  01.01.00  0:20:00  0.271 s     1.228 h/s    1.260 h/s    1.584 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	21.000 min  01.01.00  0:21:00  0.283 s     1.238 h/s    1.268 h/s    1.573 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	22.000 min  01.01.00  0:22:00  0.283 s     1.295 h/s    1.327 h/s    1.503 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	23.000 min  01.01.00  0:23:00  0.301 s     1.274 h/s    1.303 h/s    1.530 min
+2019-08-08 21:28:59	[Progress]	[SolverFeedback::writeFeedback]                 	24.000 min  01.01.00  0:24:00  0.301 s     1.328 h/s    1.358 h/s    1.467 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	25.000 min  01.01.00  0:25:00  0.309 s     1.347 h/s    1.377 h/s    1.447 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	26.000 min  01.01.00  0:26:00  0.310 s     1.399 h/s    1.430 h/s    1.393 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	27.000 min  01.01.00  0:27:00  0.318 s     1.415 h/s    1.446 h/s    1.378 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	28.000 min  01.01.00  0:28:00  0.318 s     1.465 h/s    1.497 h/s    1.331 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	29.000 min  01.01.00  0:29:00  0.328 s     1.474 h/s    1.505 h/s    1.324 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	30.000 min  01.01.00  0:30:00  0.329 s     1.520 h/s    1.552 h/s    1.283 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	31.000 min  01.01.00  0:31:00  0.338 s     1.530 h/s    1.561 h/s    1.275 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	32.000 min  01.01.00  0:32:00  0.338 s     1.578 h/s    1.610 h/s    1.237 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	33.000 min  01.01.00  0:33:00  0.350 s     1.571 h/s    1.602 h/s    1.243 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	34.000 min  01.01.00  0:34:00  0.350 s     1.617 h/s    1.649 h/s    1.207 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	35.000 min  01.01.00  0:35:00  0.351 s     1.663 h/s    1.696 h/s    1.174 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	36.000 min  01.01.00  0:36:00  0.362 s     1.659 h/s    1.691 h/s    1.177 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	37.000 min  01.01.00  0:37:00  0.362 s     1.702 h/s    1.735 h/s    1.147 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	38.000 min  01.01.00  0:38:00  0.365 s     1.734 h/s    1.767 h/s    1.126 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	39.000 min  01.01.00  0:39:00  0.379 s     1.714 h/s    1.745 h/s    1.140 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	Simtime     Simdate           Realtime    MeanSpeed    CurrentSpeed ETC
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	40.000 min  01.01.00  0:40:00  0.380 s     1.756 h/s    1.788 h/s    1.112 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	41.000 min  01.01.00  0:41:00  0.380 s     1.799 h/s    1.831 h/s    1.086 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	42.000 min  01.01.00  0:42:00  0.388 s     1.802 h/s    1.834 h/s    1.084 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	43.000 min  01.01.00  0:43:00  0.389 s     1.843 h/s    1.876 h/s    1.060 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	44.000 min  01.01.00  0:44:00  0.389 s     1.884 h/s    1.918 h/s    1.036 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	45.000 min  01.01.00  0:45:00  0.399 s     1.879 h/s    1.912 h/s    1.040 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	46.000 min  01.01.00  0:46:00  0.399 s     1.919 h/s    1.952 h/s    1.018 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	47.000 min  01.01.00  0:47:00  0.400 s     1.960 h/s    1.993 h/s   59.807 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	48.000 min  01.01.00  0:48:00  0.408 s     1.958 h/s    1.992 h/s   59.854 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	49.000 min  01.01.00  0:49:00  0.409 s     1.997 h/s    2.030 h/s   58.705 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	50.000 min  01.01.00  0:50:00  0.410 s     2.035 h/s    2.069 h/s   57.596 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	51.000 min  01.01.00  0:51:00  0.438 s     1.942 h/s    1.972 h/s    1.007 min
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	52.000 min  01.01.00  0:52:00  0.438 s     1.978 h/s    2.009 h/s   59.290 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	53.000 min  01.01.00  0:53:00  0.439 s     2.014 h/s    2.046 h/s   58.218 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	54.000 min  01.01.00  0:54:00  0.439 s     2.051 h/s    2.083 h/s   57.179 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	55.000 min  01.01.00  0:55:00  0.439 s     2.088 h/s    2.120 h/s   56.165 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	56.000 min  01.01.00  0:56:00  0.461 s     2.023 h/s    2.054 h/s   57.980 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	57.000 min  01.01.00  0:57:00  0.462 s     2.058 h/s    2.089 h/s   56.996 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	58.000 min  01.01.00  0:58:00  0.462 s     2.091 h/s    2.122 h/s   56.086 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	59.000 min  01.01.00  0:59:00  0.463 s     2.125 h/s    2.157 h/s   55.184 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	EmissionTest_BP1_Hexanal_h0.5.d6p
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.000 h    01.01.00  1:00:00  0.463 s     2.160 h/s    2.192 h/s   54.295 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 2.000 h    01.01.00  2:00:00  0.477 s     4.191 h/s    4.252 h/s   27.754 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 3.000 h    01.01.00  3:00:00  0.489 s     6.131 h/s    6.218 h/s   18.818 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 4.000 h    01.01.00  4:00:00  0.502 s     7.967 h/s    8.076 h/s   14.364 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 5.000 h    01.01.00  5:00:00  0.516 s     9.683 h/s    9.812 h/s   11.721 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 6.000 h    01.01.00  6:00:00  0.527 s    11.393 h/s   11.542 h/s    9.877 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 7.000 h    01.01.00  7:00:00  0.536 s    13.048 h/s   13.215 h/s    8.551 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 8.000 h    01.01.00  8:00:00  0.548 s    14.594 h/s   14.777 h/s    7.579 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 9.000 h    01.01.00  9:00:00  0.563 s    15.986 h/s   16.181 h/s    6.860 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	10.000 h    01.01.00 10:00:00  0.608 s    16.446 h/s   16.632 h/s    6.614 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	11.000 h    01.01.00 11:00:00  0.626 s    17.583 h/s   17.776 h/s    6.132 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	12.000 h    01.01.00 12:00:00  0.639 s    18.792 h/s   18.994 h/s    5.686 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	13.000 h    01.01.00 13:00:00  0.650 s    19.999 h/s   20.210 h/s    5.294 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	14.000 h    01.01.00 14:00:00  0.663 s    21.121 h/s   21.339 h/s    4.967 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	15.000 h    01.01.00 15:00:00  0.676 s    22.200 h/s   22.425 h/s    4.682 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	16.000 h    01.01.00 16:00:00  0.687 s    23.275 h/s   23.507 h/s    4.424 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	17.000 h    01.01.00 17:00:00  0.704 s     1.007 d/s    1.016 d/s    4.223 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	18.000 h    01.01.00 18:00:00  0.714 s     1.050 d/s    1.061 d/s    4.007 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	19.000 h    01.01.00 19:00:00  0.728 s     1.088 d/s    1.098 d/s    3.833 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	20.000 h    01.01.00 20:00:00  0.743 s     1.121 d/s    1.131 d/s    3.683 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	Simtime     Simdate           Realtime    MeanSpeed    CurrentSpeed ETC
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	21.000 h    01.01.00 21:00:00  0.768 s     1.139 d/s    1.149 d/s    3.589 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	22.000 h    01.01.00 22:00:00  0.777 s     1.179 d/s    1.190 d/s    3.433 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	23.000 h    01.01.00 23:00:00  0.791 s     1.212 d/s    1.222 d/s    3.307 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.000 d    02.01.00  0:00:00  0.803 s     1.245 d/s    1.256 d/s    3.185 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.042 d    02.01.00  1:00:00  0.818 s     1.273 d/s    1.284 d/s    3.083 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.083 d    02.01.00  2:00:00  0.858 s     1.263 d/s    1.273 d/s    3.077 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.125 d    02.01.00  3:00:00  0.874 s     1.288 d/s    1.298 d/s    2.986 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.167 d    02.01.00  4:00:00  0.914 s     1.276 d/s    1.285 d/s    2.982 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.208 d    02.01.00  5:00:00  0.938 s     1.288 d/s    1.297 d/s    2.923 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.250 d    02.01.00  6:00:00  0.951 s     1.315 d/s    1.324 d/s    2.831 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.292 d    02.01.00  7:00:00  0.986 s     1.310 d/s    1.319 d/s    2.811 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.333 d    02.01.00  8:00:00  1.000 s     1.333 d/s    1.342 d/s    2.732 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.375 d    02.01.00  9:00:00  1.012 s     1.358 d/s    1.367 d/s    2.651 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.417 d    02.01.00 10:00:00  1.030 s     1.376 d/s    1.385 d/s    2.587 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.458 d    02.01.00 11:00:00  1.102 s     1.323 d/s    1.331 d/s    2.660 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.500 d    02.01.00 12:00:00  1.113 s     1.348 d/s    1.357 d/s    2.580 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.542 d    02.01.00 13:00:00  1.132 s     1.362 d/s    1.370 d/s    2.523 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.583 d    02.01.00 14:00:00  1.169 s     1.354 d/s    1.362 d/s    2.509 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.625 d    02.01.00 15:00:00  1.184 s     1.372 d/s    1.380 d/s    2.445 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.667 d    02.01.00 16:00:00  1.199 s     1.390 d/s    1.398 d/s    2.385 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	EmissionTest_BP1_Hexanal_h0.5.d6p
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.708 d    02.01.00 17:00:00  1.209 s     1.413 d/s    1.421 d/s    2.317 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.750 d    02.01.00 18:00:00  1.222 s     1.432 d/s    1.440 d/s    2.256 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.792 d    02.01.00 19:00:00  1.241 s     1.443 d/s    1.451 d/s    2.211 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.833 d    02.01.00 20:00:00  1.256 s     1.459 d/s    1.467 d/s    2.158 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.875 d    02.01.00 21:00:00  1.271 s     1.475 d/s    1.483 d/s    2.108 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.917 d    02.01.00 22:00:00  1.285 s     1.492 d/s    1.500 d/s    2.056 s
+2019-08-08 21:29:00	[Progress]	[SolverFeedback::writeFeedback]                 	 1.958 d    02.01.00 23:00:00  1.297 s     1.509 d/s    1.517 d/s    2.005 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.000 d    03.01.00  0:00:00  1.307 s     1.530 d/s    1.538 d/s    1.951 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.042 d    03.01.00  1:00:00  1.323 s     1.543 d/s    1.551 d/s    1.907 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.083 d    03.01.00  2:00:00  1.339 s     1.556 d/s    1.563 d/s    1.866 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.125 d    03.01.00  3:00:00  1.351 s     1.572 d/s    1.580 d/s    1.819 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.167 d    03.01.00  4:00:00  1.370 s     1.581 d/s    1.589 d/s    1.783 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.208 d    03.01.00  5:00:00  1.383 s     1.596 d/s    1.604 d/s    1.740 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.250 d    03.01.00  6:00:00  1.397 s     1.611 d/s    1.619 d/s    1.699 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.292 d    03.01.00  7:00:00  1.421 s     1.612 d/s    1.620 d/s    1.672 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.333 d    03.01.00  8:00:00  1.436 s     1.625 d/s    1.633 d/s    1.633 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.375 d    03.01.00  9:00:00  1.447 s     1.641 d/s    1.649 d/s    1.592 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.417 d    03.01.00 10:00:00  1.461 s     1.654 d/s    1.662 d/s    1.554 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.458 d    03.01.00 11:00:00  1.475 s     1.667 d/s    1.675 d/s    1.518 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.500 d    03.01.00 12:00:00  1.488 s     1.680 d/s    1.688 d/s    1.481 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	Simtime     Simdate           Realtime    MeanSpeed    CurrentSpeed ETC
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.542 d    03.01.00 13:00:00  1.502 s     1.693 d/s    1.700 d/s    1.446 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.583 d    03.01.00 14:00:00  1.513 s     1.708 d/s    1.715 d/s    1.409 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.625 d    03.01.00 15:00:00  1.526 s     1.720 d/s    1.727 d/s    1.375 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.667 d    03.01.00 16:00:00  1.544 s     1.728 d/s    1.735 d/s    1.345 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.708 d    03.01.00 17:00:00  1.555 s     1.742 d/s    1.749 d/s    1.310 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.750 d    03.01.00 18:00:00  1.564 s     1.758 d/s    1.766 d/s    1.274 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.792 d    03.01.00 19:00:00  1.577 s     1.770 d/s    1.778 d/s    1.242 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.833 d    03.01.00 20:00:00  1.592 s     1.780 d/s    1.788 d/s    1.212 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.875 d    03.01.00 21:00:00  1.604 s     1.792 d/s    1.800 d/s    1.181 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.917 d    03.01.00 22:00:00  1.635 s     1.784 d/s    1.792 d/s    1.163 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.958 d    03.01.00 23:00:00  1.644 s     1.800 d/s    1.807 d/s    1.130 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.000 d    04.01.00  0:00:00  1.656 s     1.811 d/s    1.819 d/s    1.100 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.042 d    04.01.00  1:00:00  1.672 s     1.820 d/s    1.827 d/s    1.072 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.083 d    04.01.00  2:00:00  1.684 s     1.831 d/s    1.838 d/s    1.043 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.125 d    04.01.00  3:00:00  1.694 s     1.845 d/s    1.852 d/s    1.012 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.167 d    04.01.00  4:00:00  1.707 s     1.855 d/s    1.863 d/s    0.984 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.208 d    04.01.00  5:00:00  1.720 s     1.866 d/s    1.873 d/s    0.957 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.250 d    04.01.00  6:00:00  1.741 s     1.867 d/s    1.874 d/s    0.934 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.292 d    04.01.00  7:00:00  1.753 s     1.878 d/s    1.885 d/s    0.906 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.333 d    04.01.00  8:00:00  1.766 s     1.887 d/s    1.895 d/s    0.880 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	EmissionTest_BP1_Hexanal_h0.5.d6p
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.375 d    04.01.00  9:00:00  1.778 s     1.898 d/s    1.906 d/s    0.853 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.417 d    04.01.00 10:00:00  1.790 s     1.909 d/s    1.916 d/s    0.826 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.458 d    04.01.00 11:00:00  1.803 s     1.918 d/s    1.925 d/s    0.801 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.500 d    04.01.00 12:00:00  1.817 s     1.926 d/s    1.934 d/s    0.776 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.542 d    04.01.00 13:00:00  1.830 s     1.935 d/s    1.942 d/s    0.751 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.583 d    04.01.00 14:00:00  1.840 s     1.947 d/s    1.954 d/s    0.725 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.625 d    04.01.00 15:00:00  1.853 s     1.956 d/s    1.963 d/s    0.700 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.667 d    04.01.00 16:00:00  1.866 s     1.964 d/s    1.972 d/s    0.676 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.708 d    04.01.00 17:00:00  1.881 s     1.971 d/s    1.978 d/s    0.653 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.750 d    04.01.00 18:00:00  1.894 s     1.979 d/s    1.987 d/s    0.629 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.792 d    04.01.00 19:00:00  1.907 s     1.988 d/s    1.995 d/s    0.606 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.833 d    04.01.00 20:00:00  1.919 s     1.997 d/s    2.004 d/s    0.582 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.875 d    04.01.00 21:00:00  1.934 s     2.003 d/s    2.010 d/s    0.560 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.917 d    04.01.00 22:00:00  1.947 s     2.012 d/s    2.019 d/s    0.537 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.958 d    04.01.00 23:00:00  1.961 s     2.018 d/s    2.025 d/s    0.514 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.000 d    05.01.00  0:00:00  1.974 s     2.026 d/s    2.033 d/s    0.492 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.042 d    05.01.00  1:00:00  1.988 s     2.033 d/s    2.040 d/s    0.470 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.083 d    05.01.00  2:00:00  1.999 s     2.042 d/s    2.049 d/s    0.447 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.125 d    05.01.00  3:00:00  2.015 s     2.048 d/s    2.055 d/s    0.426 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.167 d    05.01.00  4:00:00  2.028 s     2.054 d/s    2.061 d/s    0.404 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	Simtime     Simdate           Realtime    MeanSpeed    CurrentSpeed ETC
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.208 d    05.01.00  5:00:00  2.050 s     2.052 d/s    2.059 d/s    0.384 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.250 d    05.01.00  6:00:00  2.065 s     2.058 d/s    2.065 d/s    0.363 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.292 d    05.01.00  7:00:00  2.078 s     2.065 d/s    2.072 d/s    0.342 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.333 d    05.01.00  8:00:00  2.093 s     2.070 d/s    2.077 d/s    0.321 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.375 d    05.01.00  9:00:00  2.107 s     2.077 d/s    2.083 d/s    0.300 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.417 d    05.01.00 10:00:00  2.122 s     2.082 d/s    2.088 d/s    0.279 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.458 d    05.01.00 11:00:00  2.145 s     2.079 d/s    2.085 d/s    0.260 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.500 d    05.01.00 12:00:00  2.158 s     2.086 d/s    2.092 d/s    0.239 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.542 d    05.01.00 13:00:00  2.171 s     2.092 d/s    2.098 d/s    0.218 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.583 d    05.01.00 14:00:00  2.184 s     2.099 d/s    2.105 d/s    0.198 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.625 d    05.01.00 15:00:00  2.196 s     2.106 d/s    2.112 d/s    0.178 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.667 d    05.01.00 16:00:00  2.209 s     2.112 d/s    2.119 d/s    0.157 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.708 d    05.01.00 17:00:00  2.222 s     2.119 d/s    2.125 d/s    0.137 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.750 d    05.01.00 18:00:00  2.240 s     2.121 d/s    2.127 d/s    0.118 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.792 d    05.01.00 19:00:00  2.253 s     2.127 d/s    2.133 d/s    0.098 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.833 d    05.01.00 20:00:00  2.268 s     2.131 d/s    2.137 d/s    0.078 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.875 d    05.01.00 21:00:00  2.278 s     2.140 d/s    2.146 d/s    0.058 s
+2019-08-08 21:29:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.917 d    05.01.00 22:00:00  2.292 s     2.145 d/s    2.151 d/s    0.039 s
+2019-08-08 21:29:02	[Progress]	[SolverFeedback::writeFeedback]                 	 4.958 d    05.01.00 23:00:00  2.306 s     2.150 d/s    2.156 d/s    0.019 s
+2019-08-08 21:29:02	[Progress]	[SolverFeedback::writeFeedback]                 	 5.000 d    06.01.00  0:00:00  2.321 s     2.155 d/s    2.161 d/s    0.000 s
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	Solver statistics
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	------------------------------------------------------------------------------
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	Wall clock time                            =    2.331 s   
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	------------------------------------------------------------------------------
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	Framework: Output writing                  =    0.312 s    (13.39 %)    
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	Framework: Step-completed calculations     =    0.000 s    ( 0.01 %)    
+2019-08-08 21:29:02	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Steps                          =                               517
+2019-08-08 21:29:02	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Newton iterations              =                               628
+2019-08-08 21:29:02	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Newton convergence failures    =                                 0
+2019-08-08 21:29:02	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Error test failures            =                                18
+2019-08-08 21:29:02	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Function evaluation (Newton)   =    0.105 s    ( 4.50 %)       630
+2019-08-08 21:29:02	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: LES setup                      =    0.026 s    ( 1.13 %)        79
+2019-08-08 21:29:02	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: LES solve                      =    0.017 s    ( 0.74 %)       628
+2019-08-08 21:29:02	[Progress]	[LESInterfaceDirect::writeMetrics]              	LES: Jacobian matrix evaluations           =                                13
+2019-08-08 21:29:02	[Progress]	[LESInterfaceDirect::writeMetrics]              	LES: Matrix factorization                  =    0.012 s    ( 0.51 %)        79
+2019-08-08 21:29:02	[Progress]	[LESInterfaceDirect::writeMetrics]              	LES: Function evaluation (Jacobian gen.)   =    0.011 s    ( 0.49 %)       143
+2019-08-08 21:29:02	[Progress]	[SolverControlFramework::writeStatistics]       	------------------------------------------------------------------------------
+2019-08-08 21:29:02	[Progress]	[SolverMainWindow::on_pushButton_clicked]       	Solver thread has finished.

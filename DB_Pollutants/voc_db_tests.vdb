@@ -1,0 +1,64 @@
+# DELPHIN6 VOC Database File
+# 
+# Lines beginning with a hash character '#' are comments and ignored
+# Use the keyword 'undefined' for all _string_ entries to indicate missing information
+# For constant "linear splines" simply store one x and one y value.
+# Use -1e-100 for undefined/unknown values.
+
+
+# The first table contains the VOC data with the following format:
+# 
+# ENTITY <string: VOC name>
+#        <string: alternative descriptive name(s)>
+#        <string: molecular formula>
+#        <double: molar weight in kg/mol>
+#        <double: liquid density of the VOC in [kg(VOC)/m3(VOC)]>
+#        <double vec: temperatures for saturation densities in K>
+#        <            saturation densities in kg/m3(gas)>
+#        <double vec: temperatures for diffusion coefficients in K>
+#        <            diffusion coefficients in air in m2/s>
+
+TABLE: VOC_DATA
+
+ENTITY Hexanal	
+	66-25-1	
+	C6H12O
+	1.00E-01
+	818
+	253.15	258.15	263.15	268.15	273.15	278.15	283.15	288.15	293.15	296.15	298.15	303.15	308.15	313.15	318.15	323.15	328.15	333.15	
+	2.604E-03	3.878E-03	5.669E-03	8.146E-03	1.152E-02	1.604E-02	2.201E-02	2.981E-02	3.985E-02	4.716E-02	5.264E-02	6.874E-02	8.882E-02	1.136E-01	1.439E-01	1.806E-01	2.247E-01	2.774E-01	
+	296.15 
+	6.672E-06
+ENTITY	TVOC	
+	From validation case	
+	----
+	0.2	
+	1
+	253.15	333.15	
+	1E-07	1E-07 
+	296.15 
+	1E-7
+
+# The next table contains properties for a combination of materials and VOCs
+# with the following format:
+#
+# ENTITY
+#   <VOC name>
+#   <Material ID name>
+#   <double:    diffusion coefficient D_m w.r.t material concentration >
+#   <double:    partition coefficient, K_ma in [kg(VOC.REV)/kg(VOC,g)] >
+
+TABLE: VOC_MATERIAL_DATA
+
+ENTITY 
+	TVOC
+	Particle Board
+	7.65E-11
+	3289
+ENTITY 
+	Hexanal
+	Particle Board
+	7.65E-11
+	3289
+
+

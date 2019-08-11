@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="6.0">
+	<ProjectInfo created="Mo. März 26 13:17:10 2018" lastEdited="Thu Aug 8 21:28:48 2019">
+		<Comment>&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;; font-weight:600;&quot;&gt;Chamber test validation with data from Deng et al. (2004).&lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier&apos;; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;;&quot;&gt;This example illustrates the use of the isothermal pollutant transport model to simulation a VOC small chamber emission test.&lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;;&quot;&gt;The example illustrates the use of the air-material-contect condition to define the mass transfer coefficient between material and chamber air.&lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;;&quot;&gt;This is the test variant from Deng&apos;s article with particle board (BP1) and hexanal. &lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;</Comment>
+	</ProjectInfo>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Model data, solver settings, general parameters-->
+	<Init>
+		<SimulationParameter>
+			<BalanceEquationModule>BEHeatPollutant</BalanceEquationModule>
+			<IBK:Parameter name="Longitude" unit="Deg">13.4</IBK:Parameter>
+			<IBK:Parameter name="Latitude" unit="Deg">51.3</IBK:Parameter>
+			<IBK:Flag name="UseKirchhoffPotential">false</IBK:Flag>
+			<IBK:Flag name="PreventOverfilling">false</IBK:Flag>
+			<IBK:Flag name="UseCustomLocation">true</IBK:Flag>
+			<IBK:Flag name="UseStrictMaterialChecks">false</IBK:Flag>
+			<DefaultInitialCondition name="DefaultTemperature" unit="C">50</DefaultInitialCondition>
+			<LambdaSelection>LambdaDry</LambdaSelection>
+		</SimulationParameter>
+		<ModelSettingsVOC>
+			<VOCDatabase>${Project Directory}/DB_Pollutants/voc_db_tests.vdb</VOCDatabase>
+			<VOCID>Hexanal</VOCID>
+			<MaterialMapping>Air gap 50 mm (vertical) [18] == Air</MaterialMapping>
+			<MaterialMapping>Particle board [348] == Particle Board</MaterialMapping>
+		</ModelSettingsVOC>
+	</Init>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--List of all materials used in this construction-->
+	<Materials>
+		<MaterialReference name="Particle board [348]" color="#ff62d82f" hatchCode="13">${Project Directory}/materials/SpanplatteV100E1F0_348.m6</MaterialReference>
+		<MaterialReference name="Air gap 50 mm (vertical) [18]" color="#ffa66dcf" hatchCode="13">${Project Directory}/materials/AirGapVertical50mm_18.m6</MaterialReference>
+	</Materials>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Discretization data (grid and sketches)-->
+	<Discretization>
+		<XSteps unit="m">9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 9.99998e-05 1.0966 </XSteps>
+	</Discretization>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Conditions data, specifies how construction interacts with environment-->
+	<Conditions>
+
+		<InitialConditions>
+
+			<InitialCondition name="Initial VOC concentration" type="VOCMass">
+				<IBK:Parameter name="Value" unit="mg/m3">11500</IBK:Parameter>
+			</InitialCondition>
+		</InitialConditions>
+
+		<FieldConditions>
+
+			<FieldCondition name="Air change of chamber" type="AirChange">
+				<IBK:Flag name="UseFlowRate">false</IBK:Flag>
+				<CCReference type="Temperature">20 C</CCReference>
+				<CCReference type="RelativeHumidity">50 %</CCReference>
+				<CCReference type="VOCDensity">0 µg/m3</CCReference>
+				<CCReference type="FluidChangeRate">1 1/h</CCReference>
+			</FieldCondition>
+		</FieldConditions>
+
+		<ContactConditions>
+
+			<ContactCondition name="VOC mass transfer between material and air" type="VOCMassTransfer" kind="Exchange">
+				<IBK:Parameter name="VOCMassTransferCoefficient" unit="m2/s">0.5</IBK:Parameter>
+			</ContactCondition>
+		</ContactConditions>
+	</Conditions>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Contains definitions of output files and schedules for outputs.-->
+	<Outputs>
+		<!--General parameters-->
+		<IBK:Unit name="TimeUnit">h</IBK:Unit>
+		<!--List of all Output schedules-->
+		<OutputGrids>
+			<OutputGrid name="Fields and Profiles">
+				<Interval>
+					<IBK:Parameter name="Duration" unit="a">0</IBK:Parameter>
+					<IBK:Parameter name="StepSize" unit="h">1</IBK:Parameter>
+				</Interval>
+			</OutputGrid>
+			<OutputGrid name="Scalars">
+				<Interval>
+					<IBK:Parameter name="Duration" unit="h">1</IBK:Parameter>
+					<IBK:Parameter name="StepSize" unit="min">1</IBK:Parameter>
+				</Interval>
+				<Interval>
+					<IBK:Parameter name="Duration" unit="d">0</IBK:Parameter>
+					<IBK:Parameter name="StepSize" unit="h">1</IBK:Parameter>
+				</Interval>
+			</OutputGrid>
+		</OutputGrids>
+		<!--List of all Output files-->
+		<OutputFiles>
+			<OutputFile name="VOC concentration chamber">
+				<Quantity unit="kg/m3">IntrinsicVOCDensity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Scalars</OutputGrid>
+			</OutputFile>
+			<OutputFile name="VOC Permeability">
+				<Quantity unit="s">VOCPermeability</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Fields and Profiles</OutputGrid>
+			</OutputFile>
+			<OutputFile name="VOC concentration profile (gas)">
+				<Quantity unit="kg/m3">IntrinsicVOCDensity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Fields and Profiles</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Emission flux">
+				<Quantity unit="kg/m2s">FluxVOCDiffusion</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Scalars</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Temperature">
+				<Quantity unit="C">Temperature</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Mean</SpaceType>
+				<OutputGrid>Scalars</OutputGrid>
+			</OutputFile>
+		</OutputFiles>
+	</Outputs>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--List of all assignments of materials and conditions-->
+	<Assignments>
+
+		<Assignment type="Material" location="Element">
+			<Reference>Particle board [348]</Reference>
+			<Range>0 0 158 0</Range>
+		</Assignment>
+
+		<Assignment type="Material" location="Element">
+			<Reference>Air gap 50 mm (vertical) [18]</Reference>
+			<Range>159 0 159 0</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Coordinate">
+			<Reference>VOC concentration chamber</Reference>
+			<IBK:Point3D>0.5642 0.5 0.5</IBK:Point3D>
+		</Assignment>
+
+		<Assignment type="InitialCondition" location="Element">
+			<Reference>Initial VOC concentration</Reference>
+			<Range>0 0 158 0</Range>
+		</Assignment>
+
+		<Assignment type="FieldCondition" location="Element">
+			<Reference>Air change of chamber</Reference>
+			<Range>159 0 159 0</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>VOC Permeability</Reference>
+			<Range>0 0 159 0</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>VOC concentration profile (gas)</Reference>
+			<Range>0 0 159 0</Range>
+		</Assignment>
+
+		<Assignment type="ContactCondition" location="Right">
+			<Reference>VOC mass transfer between material and air</Reference>
+			<Range>158 0 158 0</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Left">
+			<Reference>Emission flux</Reference>
+			<Range>159 0 159 0</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Temperature</Reference>
+			<Range>0 0 159 0</Range>
+		</Assignment>
+	</Assignments>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+</DelphinProject>
