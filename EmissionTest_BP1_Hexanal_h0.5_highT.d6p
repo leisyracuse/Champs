@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="6.0">
-	<ProjectInfo created="Mo. März 26 13:17:10 2018" lastEdited="Sun Aug 11 22:46:37 2019">
+	<ProjectInfo created="Mo. März 26 13:17:10 2018" lastEdited="Sun Aug 11 22:47:31 2019">
 		<Comment>&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;; font-weight:600;&quot;&gt;Chamber test validation with data from Deng et al. (2004).&lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier&apos;; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;;&quot;&gt;This example illustrates the use of the isothermal pollutant transport model to simulation a VOC small chamber emission test.&lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;;&quot;&gt;The example illustrates the use of the air-material-contect condition to define the mass transfer coefficient between material and chamber air.&lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier&apos;;&quot;&gt;This is the test variant from Deng&apos;s article with particle board (BP1) and hexanal. &lt;/span&gt;&lt;/p&gt;&#x0A;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Courier&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;</Comment>
+		<VariantBaseProject>EmissionTest_BP1_Hexanal_h0.5.d6p</VariantBaseProject>
+		<VariantDescription>A new variant based on project file &apos;EmissionTest_BP1_Hexanal_h0.5&apos;.</VariantDescription>
 	</ProjectInfo>
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -16,6 +18,7 @@
 			<IBK:Flag name="PreventOverfilling">false</IBK:Flag>
 			<IBK:Flag name="UseCustomLocation">true</IBK:Flag>
 			<IBK:Flag name="UseStrictMaterialChecks">false</IBK:Flag>
+			<DefaultInitialCondition name="DefaultTemperature" unit="C">50</DefaultInitialCondition>
 			<LambdaSelection>LambdaDry</LambdaSelection>
 		</SimulationParameter>
 		<ModelSettingsVOC>
@@ -64,7 +67,7 @@
 
 			<FieldCondition name="Air change of chamber" type="AirChange">
 				<IBK:Flag name="UseFlowRate">false</IBK:Flag>
-				<CCReference type="Temperature">20 C</CCReference>
+				<CCReference type="Temperature">50 C</CCReference>
 				<CCReference type="RelativeHumidity">50 %</CCReference>
 				<CCReference type="VOCDensity">0 µg/m3</CCReference>
 				<CCReference type="FluidChangeRate">1 1/h</CCReference>

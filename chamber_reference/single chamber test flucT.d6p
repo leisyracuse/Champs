@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="6.0">
+	<ProjectInfo created="Sun Aug 11 22:08:28 2019" lastEdited="Sun Aug 11 23:39:58 2019">
+		<Comment>&#x0A;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;verify kma changed over temperature&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;reference condition T=20 C&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;high temperature T =50 C and fluctuation will be tested&lt;/li&gt;&lt;/ul&gt;</Comment>
+		<VariantBaseProject>single chamber test highT.d6p</VariantBaseProject>
+		<VariantDescription>A new variant based on project file &apos;single chamber test highT&apos;.</VariantDescription>
+	</ProjectInfo>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--DirectoryPlaceholders section defines strings to be substituted with directories-->
+	<DirectoryPlaceholders>
+		<Placeholder name="Climate Database">C:/Program Files/IBK/Delphin 6.0/resources/DB_climate</Placeholder>
+		<Placeholder name="Material Database">C:/Program Files/IBK/Delphin 6.0/resources/DB_materials</Placeholder>
+	</DirectoryPlaceholders>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Model data, solver settings, general parameters-->
+	<Init>
+		<SimulationParameter>
+			<BalanceEquationModule>BEHeatPollutant</BalanceEquationModule>
+			<Interval>
+				<IBK:Parameter name="Duration" unit="d">30</IBK:Parameter>
+			</Interval>
+			<ClimateDataFilePath>${Climate Database}/Europe/Germany/TRY2011/DE-01-TRY-2010__Bremerhaven__Jahr_00000K0_00007m.c6b</ClimateDataFilePath>
+			<LambdaSelection>LambdaDry</LambdaSelection>
+		</SimulationParameter>
+		<ModelSettingsVOC>
+			<VOCDatabase>C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/DB_Pollutants/voc_db_tests.vdb</VOCDatabase>
+			<VOCID>Hexanal</VOCID>
+			<MaterialMapping>Air gap 50 mm (vertical) [18] == Air</MaterialMapping>
+			<MaterialMapping>Particle board [173] == Particle Board</MaterialMapping>
+		</ModelSettingsVOC>
+	</Init>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--List of all materials used in this construction-->
+	<Materials>
+		<MaterialReference name="Particle board [173]" color="#ffffaa00" hatchCode="13">${Material Database}/ParticleBoard_173.m6</MaterialReference>
+		<MaterialReference name="Air gap 50 mm (vertical) [18]" color="#ffffff7f" hatchCode="13">${Material Database}/AirGapVertical50mm_18.m6</MaterialReference>
+	</Materials>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Discretization data (grid and sketches)-->
+	<Discretization>
+		<XSteps unit="m">0.4 </XSteps>
+		<YSteps unit="m">0.001 0.0013 0.00169 0.00202 0.00169 0.0013 0.001 0.001 0.0013 0.00169 0.002197 0.0028561 0.00371293 0.00482681 0.00627485 0.00815731 0.0106045 0.0137858 0.0179216 0.0232981 0.0447499 0.0232981 0.0179216 0.0137858 0.0106045 0.00815731 0.00627485 0.00482681 0.00371293 0.0028561 0.002197 0.00169 0.0013 0.001 </YSteps>
+	</Discretization>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Conditions data, specifies how construction interacts with environment-->
+	<Conditions>
+
+		<ClimateConditions>
+
+			<ClimateCondition name="temperature" type="Temperature" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="C">20</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="ACH" type="FluidChangeRate" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="1/h">1</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="New climate condition" type="VOCDensity" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="µg/m3">0</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="RH" type="RelativeHumidity" kind="Constant">
+				<IBK:Parameter name="ConstantValue" unit="%">50</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="heat generation" type="EnergySource" kind="Sinus">
+				<IBK:Parameter name="MeanValue" unit="J/m3s">0</IBK:Parameter>
+				<IBK:Parameter name="Amplitude1" unit="J/m3s">100</IBK:Parameter>
+				<IBK:Parameter name="OscPeriod1" unit="d">10</IBK:Parameter>
+				<IBK:Parameter name="PhaseShift1" unit="s">0</IBK:Parameter>
+			</ClimateCondition>
+		</ClimateConditions>
+
+		<InitialConditions>
+
+			<InitialCondition name="Cm0" type="VOCMass">
+				<IBK:Parameter name="Value" unit="mg/m3">528000</IBK:Parameter>
+			</InitialCondition>
+		</InitialConditions>
+
+		<FieldConditions>
+
+			<FieldCondition name="ACH" type="AirChange">
+				<IBK:Flag name="UseFlowRate">false</IBK:Flag>
+				<CCReference type="Temperature">temperature</CCReference>
+				<CCReference type="RelativeHumidity">RH</CCReference>
+				<CCReference type="VOCDensity">New climate condition</CCReference>
+				<CCReference type="FluidChangeRate">ACH</CCReference>
+			</FieldCondition>
+
+			<FieldCondition name="energy source" type="EnergySource">
+				<CCReference type="EnergySource">heat generation</CCReference>
+			</FieldCondition>
+		</FieldConditions>
+	</Conditions>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--Contains definitions of output files and schedules for outputs.-->
+	<Outputs>
+		<!--General parameters-->
+		<IBK:Unit name="TimeUnit">h</IBK:Unit>
+		<!--List of all Output schedules-->
+		<OutputGrids>
+			<OutputGrid name="Profiles (1.5 d)">
+				<Interval>
+					<IBK:Parameter name="Duration" unit="a">0</IBK:Parameter>
+					<IBK:Parameter name="StepSize" unit="d">1.5</IBK:Parameter>
+				</Interval>
+			</OutputGrid>
+			<OutputGrid name="Scalars (1 h)">
+				<Interval>
+					<IBK:Parameter name="Duration" unit="a">0</IBK:Parameter>
+					<IBK:Parameter name="StepSize" unit="h">1</IBK:Parameter>
+				</Interval>
+			</OutputGrid>
+		</OutputGrids>
+		<!--List of all Output files-->
+		<OutputFiles>
+			<OutputFile name="Temperature profile">
+				<Quantity unit="C">Temperature</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Relative humidity profile">
+				<Quantity unit="%">RelativeHumidity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Profiles (1.5 d)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Moisture content profile">
+				<Quantity unit="kg/m3">MoistureMassDensity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Profiles (1.5 d)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Moisture content integral">
+				<Quantity unit="kg">MoistureMassDensity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Integral</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="VOC profile">
+				<Quantity unit="mg/m3">VOCMassDensityGas</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Mean</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="VOC Flux">
+				<Quantity unit="mg/m2s">FluxVOCDiffusion</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="VOC material top layer">
+				<Quantity unit="mg/m3">VOCMassDensityAdsorbed</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Mean</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="VOC air bot layer">
+				<Quantity unit="mg/m3">VOCMassDensityGas</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Mean</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="VOC 2D profile">
+				<Quantity unit="mg/m3">IntrinsicVOCDensity</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Single</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+			<OutputFile name="Temperature average">
+				<Quantity unit="C">Temperature</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Mean</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
+		</OutputFiles>
+	</Outputs>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<!--List of all assignments of materials and conditions-->
+	<Assignments>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Temperature profile</Reference>
+			<Range>0 0 0 33</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Relative humidity profile</Reference>
+			<Range>0 0 0 33</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Moisture content profile</Reference>
+			<Range>0 0 0 33</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Moisture content integral</Reference>
+			<Range>0 0 0 33</Range>
+		</Assignment>
+
+		<Assignment type="Material" location="Element">
+			<Reference>Air gap 50 mm (vertical) [18]</Reference>
+			<Range>0 7 0 33</Range>
+		</Assignment>
+
+		<Assignment type="Material" location="Element">
+			<Reference>Particle board [173]</Reference>
+			<Range>0 0 0 6</Range>
+		</Assignment>
+
+		<Assignment type="InitialCondition" location="Element">
+			<Reference>Cm0</Reference>
+			<Range>0 0 0 6</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>VOC profile</Reference>
+			<Range>0 7 0 33</Range>
+		</Assignment>
+
+		<Assignment type="FieldCondition" location="Element">
+			<Reference>ACH</Reference>
+			<Range>0 7 0 33</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Coordinate">
+			<Reference>VOC material top layer</Reference>
+			<IBK:Point3D>0.2 0.0095 0.5</IBK:Point3D>
+		</Assignment>
+
+		<Assignment type="Output" location="Coordinate">
+			<Reference>VOC air bot layer</Reference>
+			<IBK:Point3D>0.2 0.0105 0.5</IBK:Point3D>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>VOC 2D profile</Reference>
+			<Range>0 0 0 33</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Bottom">
+			<Reference>VOC Flux</Reference>
+			<Range>0 7 0 7</Range>
+		</Assignment>
+
+		<Assignment type="FieldCondition" location="Element">
+			<Reference>energy source</Reference>
+			<Range>0 0 0 6</Range>
+		</Assignment>
+
+		<Assignment type="Output" location="Element">
+			<Reference>Temperature average</Reference>
+			<Range>0 0 0 6</Range>
+		</Assignment>
+	</Assignments>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+</DelphinProject>
