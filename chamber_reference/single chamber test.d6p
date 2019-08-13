@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="6.0">
-	<ProjectInfo created="Sun Aug 11 22:08:28 2019" lastEdited="Sun Aug 11 23:08:44 2019">
+	<ProjectInfo created="Sun Aug 11 22:08:28 2019" lastEdited="Mon Aug 12 09:51:19 2019">
 		<Comment>&#x0A;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;verify kma changed over temperature&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;reference condition T=20 C&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;high temperature T =50 C and fluctuation will be tested&lt;/li&gt;&lt;/ul&gt;</Comment>
 	</ProjectInfo>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="6.0">
-	<ProjectInfo created="Sun Aug 11 22:08:28 2019" lastEdited="Tue Aug 13 19:23:52 2019">
+	<ProjectInfo created="Sun Aug 11 22:08:28 2019" lastEdited="Tue Aug 13 19:24:45 2019">
 		<Comment>&#x0A;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;verify kma changed over temperature&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;reference condition T=20 C&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;high temperature T =50 C and fluctuation will be tested&lt;/li&gt;&lt;/ul&gt;</Comment>
-		<VariantBaseProject>single chamber test highT.d6p</VariantBaseProject>
-		<VariantDescription>A new variant based on project file &apos;single chamber test highT&apos;.</VariantDescription>
+		<VariantBaseProject>single chamber test flucT.d6p</VariantBaseProject>
+		<VariantDescription>solar radiation on the particleboard</VariantDescription>
 	</ProjectInfo>
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
