@@ -1,0 +1,40 @@
+D6OARLZ! 007.000
+TYPE          = FIELD
+PROJECT_FILE  = single chamber test with solar.d6p
+CREATED       = Thu Aug 15 14:48:01 2019
+GEO_FILE      = single chamber test with solar_1421169127.g6a
+GEO_FILE_HASH = 3596356191
+QUANTITY      = Temperature
+QUANTITY_KW   = Temperature
+SPACE_TYPE    = MEAN
+TIME_TYPE     = NONE
+VALUE_UNIT    = C
+TIME_UNIT     = h
+START_YEAR    = 2007
+INDICES       = 0 
+
+0            	20             	
+1            	20             	
+2            	20             	
+3            	20             	
+4            	20.0018        	
+5            	20.0818        	
+6            	20.3857        	
+7            	20.7635        	
+8            	21.1717        	
+9            	21.8646        	
+10           	22.9063        	
+11           	23.995         	
+12           	24.965         	
+13           	25.9543        	
+14           	27.1504        	
+15           	28.5834        	
+16           	30.1042        	
+17           	31.7269        	
+18           	32.9781        	
+19           	33.7322        	
+20           	33.8713        	
+21           	33.6199        	
+22           	33.3358        	
+23           	33.058         	
+24           	32.7859        	

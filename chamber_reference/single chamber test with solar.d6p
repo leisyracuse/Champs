@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <DelphinProject xmlns="http://www.bauklimatik-dresden.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBK="http://www.bauklimatik-dresden.de/IBK" xsi:schemaLocation="http://www.bauklimatik-dresden.de DelphinProject.xsd" fileVersion="6.0">
-	<ProjectInfo created="Sun Aug 11 22:08:28 2019" lastEdited="Tue Aug 13 19:24:45 2019">
+	<ProjectInfo created="Sun Aug 11 22:08:28 2019" lastEdited="Thu Aug 15 14:48:04 2019">
 		<Comment>&#x0A;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;verify kma changed over temperature&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;reference condition T=20 C&lt;/li&gt;&#x0A;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;high temperature T =50 C and fluctuation will be tested&lt;/li&gt;&lt;/ul&gt;</Comment>
 		<VariantBaseProject>single chamber test flucT.d6p</VariantBaseProject>
 		<VariantDescription>solar radiation on the particleboard</VariantDescription>
@@ -21,7 +21,7 @@
 		<SimulationParameter>
 			<BalanceEquationModule>BEHeatPollutant</BalanceEquationModule>
 			<Interval>
-				<IBK:Parameter name="Duration" unit="d">30</IBK:Parameter>
+				<IBK:Parameter name="Duration" unit="d">1</IBK:Parameter>
 			</Interval>
 			<ClimateDataFilePath>${Climate Database}/Europe/Germany/TRY2011/DE-01-TRY-2010__Bremerhaven__Jahr_00000K0_00007m.c6b</ClimateDataFilePath>
 			<LambdaSelection>LambdaDry</LambdaSelection>
@@ -47,13 +47,19 @@
 	<!--Discretization data (grid and sketches)-->
 	<Discretization>
 		<XSteps unit="m">0.4 </XSteps>
-		<YSteps unit="m">0.001 0.0013 0.00169 0.00202 0.00169 0.0013 0.001 0.001 0.0013 0.00169 0.002197 0.0028561 0.00371293 0.00482681 0.00627485 0.00815731 0.0106045 0.0137858 0.0179216 0.0232981 0.0447499 0.0232981 0.0179216 0.0137858 0.0106045 0.00815731 0.00627485 0.00482681 0.00371293 0.0028561 0.002197 0.00169 0.0013 0.001 </YSteps>
+		<YSteps unit="m">0.001 0.0013 0.00169 0.00202 0.00169 0.0013 0.001 0.001 0.0013 0.00169 0.002197 0.0028561 0.00371293 0.00482681 0.00627485 0.00815731 0.0106045 0.0137858 0.0179216 0.0232981 0.028475 0.028475 0.028475 0.028475 0.028475 </YSteps>
 	</Discretization>
 
 	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 	<!--Conditions data, specifies how construction interacts with environment-->
 	<Conditions>
+
+		<Interfaces>
+			<Interface name="New interface" type="Detailed">
+				<BCReference>solar rad</BCReference>
+			</Interface>
+		</Interfaces>
 
 		<ClimateConditions>
 
@@ -73,13 +79,39 @@
 				<IBK:Parameter name="ConstantValue" unit="%">50</IBK:Parameter>
 			</ClimateCondition>
 
-			<ClimateCondition name="heat generation" type="EnergySource" kind="Sinus">
-				<IBK:Parameter name="MeanValue" unit="J/m3s">0</IBK:Parameter>
-				<IBK:Parameter name="Amplitude1" unit="J/m3s">100</IBK:Parameter>
-				<IBK:Parameter name="OscPeriod1" unit="d">10</IBK:Parameter>
-				<IBK:Parameter name="PhaseShift1" unit="s">0</IBK:Parameter>
+			<ClimateCondition name="heat generation" type="EnergySource" kind="TabulatedData">
+				<Filename>C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/solar.ccd</Filename>
+				<IBK:Parameter name="ShiftValue" unit="J/m3s">0</IBK:Parameter>
+			</ClimateCondition>
+
+			<ClimateCondition name="solar rad" type="HeatFlux" kind="TabulatedData">
+				<Filename>C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/solar.ccd</Filename>
+				<IBK:Parameter name="ShiftValue" unit="W/m2">0</IBK:Parameter>
 			</ClimateCondition>
 		</ClimateConditions>
+
+		<BoundaryConditions>
+
+			<BoundaryCondition name="solar rad" type="HeatConduction" kind="ImposedFlux">
+				<CCReference type="HeatFlux">solar rad</CCReference>
+			</BoundaryCondition>
+
+			<BoundaryCondition name="New interface:OutdoorHeatConduction" type="HeatConduction" kind="Exchange">
+				<IBK:Parameter name="ExchangeCoefficient" unit="W/m2K">12</IBK:Parameter>
+				<CCReference type="Temperature">[current location]::Temperature</CCReference>
+			</BoundaryCondition>
+
+			<BoundaryCondition name="New interface:OutdoorShortWaveRadiation" type="ShortWaveRadiation" kind="StandardRadiationModel">
+				<IBK:Parameter name="SurfaceAbsorptionCoefficient" unit="-">0.7</IBK:Parameter>
+				<CCReference type="SWRadiationDirect">[current location]::SWRadiationDirect</CCReference>
+				<CCReference type="SWRadiationDiffuse">[current location]::SWRadiationDiffuse</CCReference>
+			</BoundaryCondition>
+
+			<BoundaryCondition name="New interface:OutdoorLongWaveRadiation" type="LongWaveRadiation" kind="LongWaveComponents">
+				<IBK:Parameter name="SurfaceEmissionCoefficient" unit="-">0.9</IBK:Parameter>
+				<CCReference type="LWRadiationSkyEmission">[current location]::LWRadiationSkyEmission</CCReference>
+			</BoundaryCondition>
+		</BoundaryConditions>
 
 		<InitialConditions>
 
@@ -187,6 +219,12 @@
 				<SpaceType>Mean</SpaceType>
 				<OutputGrid>Scalars (1 h)</OutputGrid>
 			</OutputFile>
+			<OutputFile name="Temperature surface">
+				<Quantity unit="C">Temperature</Quantity>
+				<TimeType>None</TimeType>
+				<SpaceType>Mean</SpaceType>
+				<OutputGrid>Scalars (1 h)</OutputGrid>
+			</OutputFile>
 		</OutputFiles>
 	</Outputs>
 
@@ -197,27 +235,27 @@
 
 		<Assignment type="Output" location="Element">
 			<Reference>Temperature profile</Reference>
-			<Range>0 0 0 33</Range>
+			<Range>0 0 0 24</Range>
 		</Assignment>
 
 		<Assignment type="Output" location="Element">
 			<Reference>Relative humidity profile</Reference>
-			<Range>0 0 0 33</Range>
+			<Range>0 0 0 24</Range>
 		</Assignment>
 
 		<Assignment type="Output" location="Element">
 			<Reference>Moisture content profile</Reference>
-			<Range>0 0 0 33</Range>
+			<Range>0 0 0 24</Range>
 		</Assignment>
 
 		<Assignment type="Output" location="Element">
 			<Reference>Moisture content integral</Reference>
-			<Range>0 0 0 33</Range>
+			<Range>0 0 0 24</Range>
 		</Assignment>
 
 		<Assignment type="Material" location="Element">
 			<Reference>Air gap 50 mm (vertical) [18]</Reference>
-			<Range>0 7 0 33</Range>
+			<Range>0 7 0 24</Range>
 		</Assignment>
 
 		<Assignment type="Material" location="Element">
@@ -232,12 +270,12 @@
 
 		<Assignment type="Output" location="Element">
 			<Reference>VOC profile</Reference>
-			<Range>0 7 0 33</Range>
+			<Range>0 7 0 24</Range>
 		</Assignment>
 
 		<Assignment type="FieldCondition" location="Element">
 			<Reference>ACH</Reference>
-			<Range>0 7 0 33</Range>
+			<Range>0 7 0 24</Range>
 		</Assignment>
 
 		<Assignment type="Output" location="Coordinate">
@@ -252,7 +290,7 @@
 
 		<Assignment type="Output" location="Element">
 			<Reference>VOC 2D profile</Reference>
-			<Range>0 0 0 33</Range>
+			<Range>0 0 0 24</Range>
 		</Assignment>
 
 		<Assignment type="Output" location="Bottom">
@@ -260,14 +298,19 @@
 			<Range>0 7 0 7</Range>
 		</Assignment>
 
-		<Assignment type="FieldCondition" location="Element">
-			<Reference>energy source</Reference>
-			<Range>0 0 0 6</Range>
+		<Assignment type="Output" location="Coordinate">
+			<Reference>Temperature surface</Reference>
+			<IBK:Point3D>0.2 0.0005 0.5</IBK:Point3D>
+		</Assignment>
+
+		<Assignment type="Interface" location="Bottom">
+			<Reference>New interface</Reference>
+			<Range>0 0 0 0</Range>
 		</Assignment>
 
 		<Assignment type="Output" location="Element">
 			<Reference>Temperature average</Reference>
-			<Range>0 0 0 6</Range>
+			<Range>0 0 0 24</Range>
 		</Assignment>
 	</Assignments>
 

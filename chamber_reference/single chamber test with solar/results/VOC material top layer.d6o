@@ -1,0 +1,40 @@
+D6OARLZ! 007.000
+TYPE          = FIELD
+PROJECT_FILE  = single chamber test with solar.d6p
+CREATED       = Thu Aug 15 14:48:01 2019
+GEO_FILE      = single chamber test with solar_1421169127.g6a
+GEO_FILE_HASH = 3596356191
+QUANTITY      = Solid phase VOC mass density
+QUANTITY_KW   = VOCMassDensityAdsorbed
+SPACE_TYPE    = MEAN
+TIME_TYPE     = NONE
+VALUE_UNIT    = mg/m3
+TIME_UNIT     = h
+START_YEAR    = 2007
+INDICES       = 6 
+
+0            	528000         	
+1            	503770         	
+2            	491638         	
+3            	481856         	
+4            	473379         	
+5            	465815         	
+6            	458854         	
+7            	452307         	
+8            	446173         	
+9            	440283         	
+10           	434447         	
+11           	428637         	
+12           	422983         	
+13           	417447         	
+14           	411896         	
+15           	406274         	
+16           	400620         	
+17           	394846         	
+18           	389112         	
+19           	383806         	
+20           	378914         	
+21           	374508         	
+22           	370335         	
+23           	366340         	
+24           	362527         	

@@ -1,0 +1,40 @@
+D6OARLZ! 007.000
+TYPE          = FLUX
+PROJECT_FILE  = single chamber test with solar.d6p
+CREATED       = Thu Aug 15 14:48:01 2019
+GEO_FILE      = single chamber test with solar_1421169127.g6a
+GEO_FILE_HASH = 3596356191
+QUANTITY      = VOC diffusion mass flux
+QUANTITY_KW   = FluxVOCDiffusion
+SPACE_TYPE    = SINGLE
+TIME_TYPE     = NONE
+VALUE_UNIT    = mg/m2s
+TIME_UNIT     = h
+START_YEAR    = 2007
+INDICES       = 7 
+
+0            	0              	
+1            	0.00519455     	
+2            	0.00467432     	
+3            	0.00453219     	
+4            	0.00445082     	
+5            	0.00441335     	
+6            	0.0044555      	
+7            	0.0045013      	
+8            	0.00455137     	
+9            	0.00469784     	
+10           	0.00493435     	
+11           	0.00518673     	
+12           	0.0053754      	
+13           	0.00563561     	
+14           	0.0059653      	
+15           	0.00635874     	
+16           	0.00674762     	
+17           	0.00732168     	
+18           	0.00762728     	
+19           	0.00772598     	
+20           	0.00758077     	
+21           	0.00734351     	
+22           	0.00715116     	
+23           	0.00697791     	
+24           	0.00681366     	

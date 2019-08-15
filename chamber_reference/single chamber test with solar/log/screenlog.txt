@@ -1,0 +1,286 @@
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	DELPHIN 6 Solver - Parallel Version
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	All rights reserved.
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	The DELPHIN 6 Development Team:
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	Andreas Nicolai, Stefan Vogelsang, Anne Paepcke, Heiko Fechner, John Grunewald
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	Contact: andreas.nicolai [at] tu-dresden.de
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	
+2019-08-15 14:48:01	[Progress]	[Version::printCompilerVersion]                 	Compiled with Visual Studio 2015
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	Material model and file format library version   6.1.0
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	IBK library version                              4.2.4
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	DATAIO library version                           7.1.4
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	CCM library version                              1.1.0
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	JADE library version                             1.3.1
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	JAC library version                              1.6.0
+2019-08-15 14:48:01	[Progress]	[ModelImpl::printVersionStrings]                	Salt library version                             1.0.0
+2019-08-15 14:48:01	[Progress]	                                                	
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::printVersionInfo]      	Integrator Framework Version                     0.9.6
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::printVersionInfo]      	SUNDIALS Release Version                         2.7.0
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	OpenMP parallelization enabled: using 4 thread(s)
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	Number of threads selected from variable OMP_NUM_THREADS = 4
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	Executable path:    'C:/Program Files/IBK/Delphin 6.0/DelphinSolverUI.exe'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	Project file:       'C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/chamber_reference/single chamber test with solar.d6p'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	Project directory:  'C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/chamber_reference'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	Output root dir:    'C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/chamber_reference/single chamber test with solar'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	  log directory:      'C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/chamber_reference/single chamber test with solar/log'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	  var/data directory: 'C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/chamber_reference/single chamber test with solar/var'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	  results directory:  'C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/chamber_reference/single chamber test with solar/results'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	Reading project file  : single chamber test with solar.d6p
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	Project read successfully.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	Path Placeholders
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	  Climate Database          -> C:/Program Files/IBK/Delphin 6.0/resources/DB_climate
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	  Material Database         -> C:/Program Files/IBK/Delphin 6.0/resources/DB_materials
+2019-08-15 14:48:01	[Progress]	[ModelImpl::init]                               	  Project Directory         -> C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/chamber_reference
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupCalculation]                   	Initializing model
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupSolverParameter]               	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupSolverParameter]               	  Initializing Solver Parameter
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupSolverParameter]               	    Automatically setting NonLinSolverConvCoeff to 0.1
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupEquations]                     	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupEquations]                     	  Instantiating Balance Equation Module:
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupEquations]                     	    'Energy and pollutant Balance Equation (IBK)' [BEHeatPollutant]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupEquations]                     	      3 balance equation(s)
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDefinitions]                   	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDefinitions]                   	  Checking assignments for valid ranges
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	  Removed unused definitions from project
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    2 materials (of 2) used:
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	      * Air gap 50 mm (vertical) [18]
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	      * Particle board [173]
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    1 interface definitions (of 1) used:
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * New interface
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    1 initial conditions (of 1) used:
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Cm0
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    1 field conditions (of 2) used:
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * ACH
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    0 contact conditions (of 0) used:
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    1 boundary conditions (of 4) used:
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * solar rad
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    5 climate conditions (of 6) used:
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * temperature
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * ACH
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * New climate condition
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * RH
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * solar rad
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    11 output file definition (of 11) used:
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Temperature profile
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Relative humidity profile
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Moisture content profile
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Moisture content integral
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * VOC profile
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * VOC material top layer
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * VOC air bot layer
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * VOC 2D profile
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * VOC Flux
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Temperature surface
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Temperature average
+2019-08-15 14:48:01	[Progress]	[Project::clean]                                	    2 output grids (of 2) used:
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Profiles (1.5 d)
+2019-08-15 14:48:01	[Progress]	[Project::printDefinitionList]                  	      * Scalars (1 h)
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDefinitions]                   	  Creating default initial conditions
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDefinitions]                   	    Default initial temperature = 20 degC
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDefinitions]                   	    Default initial relative humidity = 80 %
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDefinitions]                   	  Creating interface definitions for engineering models
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupMaterials]                     	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupMaterials]                     	  Reading material data files
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupMaterials]                     	    C:/Program Files/IBK/Delphin 6.0/resources/DB_materials/AirGapVertical50mm_18.m6
+2019-08-15 14:48:01	[Progress]	[Material::read]                                	    Reading material file 'AirGapVertical50mm_18.m6'.
+2019-08-15 14:48:01	[Progress]	[Material::prepareCalculation]                  	      Preparing material 'Air gap 50 mm (vertical)' ID: 18 for calculation.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupMaterials]                     	    C:/Program Files/IBK/Delphin 6.0/resources/DB_materials/ParticleBoard_173.m6
+2019-08-15 14:48:01	[Progress]	[Material::read]                                	    Reading material file 'ParticleBoard_173.m6'.
+2019-08-15 14:48:01	[Progress]	[Material::prepareCalculation]                  	      Preparing material 'Particle board' ID: 173 for calculation.
+2019-08-15 14:48:01	[Progress]	[Pollutants::init]                              	  Setting up pollutant module
+2019-08-15 14:48:01	[Progress]	[Pollutants::init]                              	    Reading pollutant database 'C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/DB_Pollutants/voc_db_tests.vdb'.
+2019-08-15 14:48:01	[Progress]	                                                	    VOC database read with 2 VOCs, 1 materials
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupClimateData]                   	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupClimateData]                   	  Reading climate data files and initializing calculation
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupClimateData]                   	    Initializing surfaces (radiation calculation) in CCM
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupClimateData]                   	      Surface #0 registered for horizontal plane
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupClimateData]                   	      Surface #1 registered: orientation/inclination =   0.00/ 90.00 Deg
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupClimateData]                   	    Reading CCD files
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupClimateData]                   	      C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/solar.ccd
+2019-08-15 14:48:01	[Progress]	[ClimateDataLoader::readCCDFile]                	      C:/Users/Allen/Desktop/Delphin6_chamber_verify_kma/solar.ccd
+2019-08-15 14:48:01	[Warning ]	[ClimateCond::setData]                          	      Quantity of climate data file 'DirRad' does not match requested quantity 'HeatFlux' of climate condition definition.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupConnections]                   	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupConnections]                   	  Connecting Definitions
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	  Module Setup
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	    Selecting standard flux modules:
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      FluxHeatConduction
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      FluxVOCDiffusion
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	    Selecting standard boundary flux modules:
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      BCFluxHeatConduction
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	    Instantiating flux modules
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      [BCFluxHeatConduction]         Boundary Condition: Heat Conduction Flux (IBK) 
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      [FluxHeatConduction]           Heat Conduction Flux (IBK) 
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      [FluxVOCDiffusion]             VOC/Pollutant Diffusion Flux (IBK) 
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	    Selecting standard source modules:
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      AirChange
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	    Instantiating source modules
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupModules]                       	      [SourceAirChange]              Air exchange between an air filled cavity and outside air 
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	  Creating auxiliary model data
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	  Initializing quantities
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	    8 States
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [0] EnergyDensity 'Energy density'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [1] IntrinsicVOCDensity 'Intrinsic VOC density in gas phase in kg(VOCg)/m3(gas)'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [2] PartialPressureVOC 'VOC partial pressure'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [3] Temperature 'Temperature'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [4] ThermalConductivity 'Thermal conductivity'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [5] VOCMassDensityAdsorbed 'Solid phase VOC mass density'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [6] VOCMassDensityGas 'Gas phase VOC mass density'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [7] VOCPermeability 'VOC/pollutant permeability in gas phase'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	    5 Internal Fluxes
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [0] TotalFluxHeat 'Summation flux for balance equation Heat'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [1] TotalFluxPollutant 'Summation flux for balance equation Pollutant'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [2] TotalFluxPollutantSolid 'Summation flux for balance equation PollutantSolid'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [3] FluxHeatConduction 'Heat conduction flux'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [4] FluxVOCDiffusion 'VOC diffusion mass flux'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	    4 Boundary Condition Fluxes
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [0] TotalFluxHeat 'Summation flux for balance equation Heat'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [1] TotalFluxPollutant 'Summation flux for balance equation Pollutant'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [2] TotalFluxPollutantSolid 'Summation flux for balance equation PollutantSolid'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [3] FluxHeatConduction 'Heat conduction flux'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	    8 Sources
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [0] TotalSourceHeat 'Summation source for balance equation Heat'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [1] TotalSourcePollutant 'Summation source for balance equation Pollutant'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [2] TotalSourcePollutantEmission 'Summation source for balance equation PollutantEmission'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [3] MoistureEnthalpyAirChange 'Source: Enthalpy associated with moisture load from air change'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [4] ThermalLoadAirChange 'Source: Thermal load from air change'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [5] VOCDesorptionRate 'Source: Mass production rate of gas phase VOC from emission of solid phase'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [6] VOCLoadAirChange 'Source: VOC mass concentration gain due to air change'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupQuantities]                    	      [7] VOCAdsorptionRate 'Source: Mass production rate of solid phase VOC from condensation out of gas phase'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	  Discretization and Grid Generation
+2019-08-15 14:48:01	[Progress]	[ModelImpl::initElementMatrix3D]                	    Grid width  (x-dim, radius) = 0.4 m
+2019-08-15 14:48:01	[Progress]	[ModelImpl::initElementMatrix3D]                	    Grid height (y-dim, height) = 0.25 m
+2019-08-15 14:48:01	[Progress]	[ModelImpl::initElementMatrix3D]                	    Grid depth  (z-dimension)   = 1 m
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignMaterials]                    	    Assigning materials
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignMaterials]                    	      'Air gap 50 mm (vertical)' [AirGapVertical50mm_18.m6]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignMaterials]                    	        [0, 7, 0] - [0, 24, 0]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignMaterials]                    	      'Particle board' [ParticleBoard_173.m6]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignMaterials]                    	        [0, 0, 0] - [0, 6, 0]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInitialConditions]            	    Assigning Initial Conditions
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInitialConditions]            	      'Default initial relative humidity' [RelativeHumidity]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInitialConditions]            	        assigned to [0, 0, 0] - [0, 24, 0]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInitialConditions]            	      'Default initial temperature' [Temperature]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInitialConditions]            	        assigned to [0, 0, 0] - [0, 24, 0]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInitialConditions]            	      'Cm0' [VOCMass]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInitialConditions]            	        assigned to [0, 0, 0] - [0, 6, 0]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignFieldConditions]              	    Assigning field conditions
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignFieldConditions]              	      'ACH' [AirChange]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignFieldConditions]              	        assigned to [0, 7, 0] - [0, 24, 0]
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Grid numbering:
+2019-08-15 14:48:01	[Progress]	[Grid::generate]                                	      Optimizing numbering in domain #1.
+2019-08-15 14:48:01	[Progress]	[Grid::generate]                                	        Domain element range: 0..24, size = 25
+2019-08-15 14:48:01	[Progress]	[Grid::rectilinearNumbering]                    	        Numbering Order: row, stack, col [JKI] (loop order)
+2019-08-15 14:48:01	[Progress]	[Grid::generate]                                	        Optimizing CMK numbering starting from node:
+2019-08-15 14:48:01	[Progress]	[Grid::generate]                                	          0 -> hbw = 1
+2019-08-15 14:48:01	[Progress]	[Grid::generate]                                	          24 -> hbw = 1
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	      CMK (optimized) - max. half bandwidth: 1
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	      Total elements count : 25
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	      Used elements count  : 25
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	    Assigning interfaces
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	      'New interface'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	        assigned to [0, 0, 0] - [0, 0, 0]  Bottom
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Removing unused sides
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignOutputFiles]                  	    Assigning output file definitions for horizontal sides.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	    Assigning interfaces
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	      'New interface'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Removing unused sides
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignOutputFiles]                  	    Assigning output file definitions for vertical sides.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	    Assigning interfaces
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignInterfacesOrContactConditions]	      'New interface'
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Removing unused sides
+2019-08-15 14:48:01	[Progress]	[ModelImpl::assignOutputFiles]                  	    Assigning output file definitions for frontal sides.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Total side count   : 126
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Reduced side count : 25
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Creating Element -> Side links
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Computing weight-factors for boundary value extrapolation
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	    Grid complete.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	      Elements                        : 25
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	      Sides (total/internal/boundary) : 25/24/1
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	      Half-Bandwidth (element-based)  : 1
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDiscretization]                	      75 unknowns (= system size)
+2019-08-15 14:48:01	[Progress]	[ModelImpl::collectFieldConditionElementIndexes]	    Check field conditions
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDataStorage]                   	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupDataStorage]                   	  Initializing data storage vectors (memory allocation)
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupOutputs]                       	  
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupOutputs]                       	  Creating/opening output files
+2019-08-15 14:48:01	[Warning ]	[ModelImpl::createDataIOFiles]                  	    Quantity with ID name 'RelativeHumidity' is not being generated with current set of selected modules. Output is ignored.
+2019-08-15 14:48:01	[Warning ]	[ModelImpl::createDataIOFiles]                  	    Quantity with ID name 'MoistureMassDensity' is not being generated with current set of selected modules. Output is ignored.
+2019-08-15 14:48:01	[Warning ]	[ModelImpl::createDataIOFiles]                  	    Quantity with ID name 'MoistureMassDensity' is not being generated with current set of selected modules. Output is ignored.
+2019-08-15 14:48:01	[Warning ]	[ModelImpl::createDataIOFiles]                  	    Boundary flux with ID name 'FluxVOCDiffusion' is not being generated with current set of selected modules. Output flux, if requested, will be always 0.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::createDataIOFiles]                  	    Output definition 'VOC Flux' is assigned to at least one internal side, therefore field flux sign convention is used.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupCalculation]                   	  Composing initial condition vector
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupCalculation]                   	  Input value checks
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupCalculation]                   	    Checking modules for runtime exceptions before starting calculation.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupCalculation]                   	    Checking sources for runtime exceptions before starting calculation.
+2019-08-15 14:48:01	[Progress]	[ModelImpl::setupCalculation]                   	    Checking flux modules for runtime exceptions before starting calculation.
+2019-08-15 14:48:01	[Progress]	[Model::init]                                   	Initialization Model Interface
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::lesInterface]               	
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::lesInterface]               	Creating Linear Equation Solver Modules
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::lesInterface]               	  Number of unknowns           : 75
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::lesInterface]               	  Element-based half-Bandwidth : 1
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::lesInterface]               	  Using generic Band solver with bandwidth 11!
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::integratorInterface]        	
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::integratorInterface]        	Creating Integrator
+2019-08-15 14:48:01	[Progress]	[ModelInterfaceODE::integratorInterface]        	  Using CVODE integrator.
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	Model initialization complete.
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	
+2019-08-15 14:48:01	[Progress]	[SolverThread::run]                             	Creating solver framework
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::init]                 	Initializing CVODE integrator
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::init]                 	  Setting NonlinConvCoef to 0.1.
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::init]                 	  Setting MaxNonLinIters (maxcor) to 3.
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::init]                 	  Initializing LES solver implementation
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::run]                   	
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::run]                   	Running solver from time t=0
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	Simtime     Simdate           Realtime    MeanSpeed    CurrentSpeed ETC
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 0.000 s    01.01.00  0:00:00  0.002 s     0.000 s/s    0.000 s/s   ---
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 1.000 h    01.01.00  1:00:00  0.027 s     1.565 d/s    1.693 d/s    0.566 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 2.000 h    01.01.00  2:00:00  0.030 s     2.743 d/s    2.938 d/s    0.312 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 3.000 h    01.01.00  3:00:00  0.033 s     3.742 d/s    3.982 d/s    0.220 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 4.000 h    01.01.00  4:00:00  0.036 s     4.663 d/s    4.942 d/s    0.169 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 5.000 h    01.01.00  5:00:00  0.039 s     5.393 d/s    5.690 d/s    0.139 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 6.000 h    01.01.00  6:00:00  0.055 s     4.518 d/s    4.689 d/s    0.160 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 7.000 h    01.01.00  7:00:00  0.063 s     4.641 d/s    4.795 d/s    0.148 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 8.000 h    01.01.00  8:00:00  0.072 s     4.616 d/s    4.749 d/s    0.140 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 9.000 h    01.01.00  9:00:00  0.079 s     4.730 d/s    4.853 d/s    0.129 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	10.000 h    01.01.00 10:00:00  0.082 s     5.078 d/s    5.206 d/s    0.112 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	11.000 h    01.01.00 11:00:00  0.087 s     5.267 d/s    5.392 d/s    0.100 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	12.000 h    01.01.00 12:00:00  0.089 s     5.587 d/s    5.716 d/s    0.087 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	13.000 h    01.01.00 13:00:00  0.093 s     5.837 d/s    5.967 d/s    0.077 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	14.000 h    01.01.00 14:00:00  0.095 s     6.131 d/s    6.263 d/s    0.067 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	15.000 h    01.01.00 15:00:00  0.098 s     6.366 d/s    6.499 d/s    0.058 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	16.000 h    01.01.00 16:00:00  0.102 s     6.563 d/s    6.696 d/s    0.050 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	17.000 h    01.01.00 17:00:00  0.124 s     5.694 d/s    5.787 d/s    0.050 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	18.000 h    01.01.00 18:00:00  0.127 s     5.888 d/s    5.983 d/s    0.042 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	19.000 h    01.01.00 19:00:00  0.130 s     6.079 d/s    6.174 d/s    0.034 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	single chamber test with solar.d6p
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	20.000 h    01.01.00 20:00:00  0.133 s     6.262 d/s    6.358 d/s    0.026 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	21.000 h    01.01.00 21:00:00  0.137 s     6.402 d/s    6.498 d/s    0.019 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	22.000 h    01.01.00 22:00:00  0.142 s     6.437 d/s    6.530 d/s    0.013 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	23.000 h    01.01.00 23:00:00  0.145 s     6.624 d/s    6.717 d/s    0.006 s
+2019-08-15 14:48:01	[Progress]	[SolverFeedback::writeFeedback]                 	 1.000 d    02.01.00  0:00:00  0.147 s     6.805 d/s    6.900 d/s    0.000 s
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	Solver statistics
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	------------------------------------------------------------------------------
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	Wall clock time                            =  147.433 ms  
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	------------------------------------------------------------------------------
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	Framework: Output writing                  =   22.010 ms   (14.93 %)    
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	Framework: Step-completed calculations     =    0.099 ms   ( 0.07 %)    
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Steps                          =                               421
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Newton iterations              =                               551
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Newton convergence failures    =                                 0
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Error test failures            =                                27
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: Function evaluation (Newton)   =   30.456 ms   (20.66 %)       553
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: LES setup                      =    6.092 ms   ( 4.13 %)        91
+2019-08-15 14:48:01	[Progress]	[IntegratorSundialsCVODE::writeMetrics]         	Integrator: LES solve                      =    2.048 ms   ( 1.39 %)       551
+2019-08-15 14:48:01	[Progress]	[LESInterfaceDirect::writeMetrics]              	LES: Jacobian matrix evaluations           =                                12
+2019-08-15 14:48:01	[Progress]	[LESInterfaceDirect::writeMetrics]              	LES: Matrix factorization                  =    1.920 ms   ( 1.30 %)        91
+2019-08-15 14:48:01	[Progress]	[LESInterfaceDirect::writeMetrics]              	LES: Function evaluation (Jacobian gen.)   =    3.692 ms   ( 2.50 %)       132
+2019-08-15 14:48:01	[Progress]	[SolverControlFramework::writeStatistics]       	------------------------------------------------------------------------------
+2019-08-15 14:48:01	[Progress]	[SolverMainWindow::on_pushButton_clicked]       	Solver thread has finished.

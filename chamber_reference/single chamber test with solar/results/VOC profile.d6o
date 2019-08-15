@@ -1,0 +1,40 @@
+D6OARLZ! 007.000
+TYPE          = FIELD
+PROJECT_FILE  = single chamber test with solar.d6p
+CREATED       = Thu Aug 15 14:48:01 2019
+GEO_FILE      = single chamber test with solar_1421169127.g6a
+GEO_FILE_HASH = 3596356191
+QUANTITY      = Gas phase VOC mass density
+QUANTITY_KW   = VOCMassDensityGas
+SPACE_TYPE    = MEAN
+TIME_TYPE     = NONE
+VALUE_UNIT    = mg/m3
+TIME_UNIT     = h
+START_YEAR    = 2007
+INDICES       = 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 
+
+0            	0              	
+1            	64.7493        	
+2            	69.5982        	
+3            	69.049         	
+4            	67.9056        	
+5            	66.9271        	
+6            	66.6241        	
+7            	67.0493        	
+8            	67.5867        	
+9            	68.7268        	
+10           	71.0838        	
+11           	74.3878        	
+12           	77.6184        	
+13           	80.9081        	
+14           	84.9451        	
+15           	89.9477        	
+16           	95.558         	
+17           	102.298        	
+18           	109.075        	
+19           	113.047        	
+20           	114.313        	
+21           	112.565        	
+22           	109.952        	
+23           	107.29         	
+24           	104.72         	
